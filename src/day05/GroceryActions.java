@@ -29,9 +29,35 @@ public class GroceryActions {
         float potatoPrice = scan.nextFloat();
         System.out.println("How many you want to buy ?");
         int potatoCount = scan.nextInt();
-        System.out.println("Your total forr potato is " + (potatoPrice * potatoCount));
+        float potatoTotal = potatoPrice * potatoCount;
+        System.out.println("Your total for potato is " + potatoTotal);
+
+        System.out.println("what is the price for tomato");
+        float tomatoPrice = scan.nextFloat();
+        System.out.println("How many you want to buy ?");
+        int tomatoCount = scan.nextInt();
+        float tomatoTotal = tomatoPrice * tomatoCount;
+        System.out.println("Your total for tomato is " + tomatoTotal);
+
+        System.out.println("what is the price for banana");
+        float bananaPrice = scan.nextFloat();
+        System.out.println("How many you want to buy ?");
+        int bananaCount = scan.nextInt();
+        float bananaTotal = bananaPrice * bananaCount;
+        System.out.println("Your total forr potato is " + bananaTotal);
+
+        System.out.println("You got " + tomatoCount + " tomatos, the price is " + tomatoPrice
+                + " and the total is $" + tomatoTotal);
+
+        System.out.println("You got " + potatoCount + " potatoes , the price is " + potatoPrice
+                + " and the total is $" + potatoTotal);
+
+        System.out.println("You got " + bananaCount + " bananas , the price is " + bananaPrice
+                + " and the total is $" + bananaTotal);
+
+        System.out.println("Your grand total for this shopping is $" +
+                (tomatoTotal + potatoTotal + bananaTotal));
 
 
     }
-
 }
