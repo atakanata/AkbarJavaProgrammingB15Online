@@ -26,9 +26,13 @@ public class SaleCalculator {
         * */
         Scanner blabla = new Scanner(System.in);
 
-        double regularPrice;
-        double salePrice;
-        double discount;
+//        double regularPrice;
+//        double salePrice;
+//        double discount;
+
+        // if you have variables with same data type , you can declare them in one line like this :
+        double regularPrice, salePrice, discount;
+
 
         System.out.println("What is the regular price ");
         regularPrice = blabla.nextDouble();
