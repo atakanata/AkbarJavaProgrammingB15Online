@@ -24,6 +24,14 @@ public class CastingTheCharacter {
         System.out.println(myFirstChar);
 
         // find out your number of each character in your first name
+        // this is implicitly turning 'A' to it's number representation in ascii table
+
+        int firstCharNum = 'A'; // you may also write it as  int firstCharNum = (int)'A' ;
+        System.out.println("number of letter A is " + firstCharNum);
+
+        // or OPTIONALLY you can directly cast it to number and print
+        System.out.println("number of letter K is " + (int) 'K');
+
 
         char letterA = 'a';
         //  adding a character to a int number will result in int
