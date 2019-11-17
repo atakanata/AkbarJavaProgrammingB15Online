@@ -25,6 +25,14 @@ public class CastingTheCharacter {
 
         // find out your number of each character in your first name
 
+        char letterA = 'a';
+        //  adding a character to a int number will result in int
+        //  (int) letterA   + 1
+        System.out.println(letterA + 1);
+
+        System.out.println(" " + letterA + 1);
+
+
     }
 
 
