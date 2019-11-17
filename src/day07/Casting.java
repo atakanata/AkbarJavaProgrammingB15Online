@@ -8,7 +8,6 @@ public class Casting {
 
         //int 10 is implicitly(automatically) converted to double 10.0
         // and stored inside bigNum behind scene
-
         double bigNum = 10;
         System.out.println(bigNum);
 
