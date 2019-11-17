@@ -8,6 +8,7 @@ public class Casting {
 
         //int 10 is implicitly(automatically) converted to double 10.0
         // and stored inside bigNum behind scene
+
         double bigNum = 10;
         System.out.println(bigNum);
 
@@ -19,8 +20,11 @@ public class Casting {
         System.out.println(num);
 
         // create a long variable and store int
+        long earthToMoon = 10000; // --->> 10000L
         // create an int variable and try to store above long value
+        int earthToMoonIn_blabla = (int) earthToMoon;
 
+        System.out.println(earthToMoonIn_blabla);
 
     }
 
