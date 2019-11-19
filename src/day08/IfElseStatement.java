@@ -1,6 +1,6 @@
 package day08;
 
-public class IfStatement {
+public class IfElseStatement {
 
     public static void main(String[] args) {
 
