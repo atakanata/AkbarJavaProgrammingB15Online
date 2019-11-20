@@ -18,7 +18,8 @@ public class DayPrinter_Version2 {
          *
         * */
         int dayCode = 1;
-        String dayName = ""; // assigning a empty String value
+        String dayName;
+        //String dayName = ""; // assigning a empty String value
 
         if (dayCode == 1) {
             dayName = "Monday";
@@ -38,9 +39,7 @@ public class DayPrinter_Version2 {
             System.out.println("WATCH FOOTBAL@@@@!!!");
         } else {
             dayName = "UNKNOWN!!!";
-            //System.out.println("Day is Unknown");
         }
-
         System.out.println("Day is " + dayName);
 
     }
