@@ -14,7 +14,7 @@ public class MultiBranch_WithSwitch {
          * 35, Ice Cream
          * */
         String order = "";
-        int itemNumber = 35;
+        int itemNumber = 11;
         // what data type of variable I can use her e
         // byte , short , int , char , String
         switch (itemNumber) {
@@ -22,7 +22,8 @@ public class MultiBranch_WithSwitch {
             case 11:
                 System.out.println("You have selected 11");
                 order = "Burger";
-                break;
+                break; // if break does not show up here
+            // it will just move on to next case
             case 5:
                 System.out.println("You have selected 5");
                 order = "French Fry";
