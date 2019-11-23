@@ -18,7 +18,7 @@ public class StringEquality {
         //  The correct way of comparing String to get consistent result is
         // using one of the String object behaviour / method called
         // equals method
-        //   str1.equals(str2)
+        // str1.equals(str2)
         System.out.println("USING EQUALS METHODS");
         System.out.println(name.equals(name2));
         System.out.println(name.equals(name3));
