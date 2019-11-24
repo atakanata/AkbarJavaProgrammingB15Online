@@ -5,7 +5,7 @@ public class WarmUp_SeasonFinder {
     // <= and =< , are they same thing
     public static void main(String[] args) {
 
-        int month = 2;
+        int month = 12;
 
         if (month > 12 || month < 1) {
             System.out.println("INVALID MONTH ");
