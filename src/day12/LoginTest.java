@@ -18,6 +18,7 @@ public class LoginTest {
             System.out.println("Login Successful ");
 
         } else if (!userName.equals("user123") && password.equals("pass123")) {
+
             System.out.println("USERNAME NOT CORRECT!!!");
 
         } else if (userName.equals("user123") && !password.equals("pass123")) {
