@@ -24,3 +24,17 @@ public class WakeUp_CodeInWeather {
     }
 
 }
+
+//// WAKE UP TASK :
+//
+//    Create a class called WakeUp_CodeInWeather with main method
+//
+//        Create a variable to store the weather of your city right now :
+//
+//        And write an if else if else statement to do following
+//
+//        If Weather Sunny ——>>  Code in Sunny weather
+//        If Weather Rainy ——>>  Code in Rainy weather
+//        If Weather Cloudy  ——>>  Code in Cloudy weather
+//        If Weather Snowy  ——>>  Code in Snowy weather
+//        Else   —>> rain or shine just keep coding anyway !!!
