@@ -16,7 +16,7 @@ public class Practice_11_12 {
 
 //        System.out.println(" Hello world ");
 //        System.out.println(" Hello B15 ");
-//khusaefusdfkhdfskdf        System.out.println(" I am Akbar ");
+//        System.out.println(" I am Akbar ");
         // commenting out short cut on mac is Command + /
         // commenting out short cut on windows is Command + / on mac
 
