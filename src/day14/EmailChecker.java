@@ -12,6 +12,7 @@ public class EmailChecker {
 //
 //        if it does not contain character @  say invalid email
 //        if it contain space say invalid email
+
 //        if it endsWith @gmail.com  -->> print gmail
 //        if it endsWith @yahoo.com  -->> print yahoo email
 //        if it endsWith @mail.ru  -->> print russian email
