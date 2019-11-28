@@ -23,7 +23,6 @@ public class StringCaseInsenstiveCheck {
         System.out.println(name.toLowerCase().contains("st")); // THIS WORK BECAUSE
         //System.out.println( name.length().toUppercase()  ); BAD IDEA!!!
 
-
     }
 
 
