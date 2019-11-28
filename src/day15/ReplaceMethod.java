@@ -8,7 +8,7 @@ public class ReplaceMethod {
         // It will go through all part of String and replace
         // any match with the new String
 
-        String message = "I love Pumpkin , Pumpkin IS FUN!";
+        String message = "I love Pumpkin , Pumpkin IS FUN! ";
 
         message = message.replace("Pumpkin", "Java!");
 
