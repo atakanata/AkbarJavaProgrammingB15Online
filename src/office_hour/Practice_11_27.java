@@ -39,7 +39,7 @@ public class Practice_11_27 {
         System.out.println("emptySpacesAfterTrimmed is empty??? :  " + emptySpacesAfterTrimmed.isEmpty());
 
         // isEmpty VS isBlank method from String class
-        // isEmpty -->>  if yourString.length()>0  true else it's false
+        // isEmpty -->>  if yourString.length()>0  false else it's true
         // isBlank -->>  if you have only white spaces , get true , else get false
         System.out.println("emptySpaces is blank or not ??   " + emptySpaces.isBlank());
 
