@@ -18,5 +18,7 @@ public class Count1To10 {
 
     }
 
+    //  10 <=10 -->> true     11 <= 10 false
+    //  10 < 11 -->> true     11 <  11 false
 
 }
