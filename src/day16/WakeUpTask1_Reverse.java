@@ -13,7 +13,9 @@ public class WakeUpTask1_Reverse {
         // start getting character from last location till first location then save it
         //word2 =  "" + word1.charAt(3) + word1.charAt(2) + word1.charAt(1) + word1.charAt(0) ;
 //        word2  = word2 +  word1.charAt(3) + word1.charAt(2) + word1.charAt(1) + word1.charAt(0) ;
-        word2 += word1.charAt(3) + "" + word1.charAt(2) + word1.charAt(1) + word1.charAt(0);
+        // extra way to do this but not necessary
+//        word2 += word1.charAt(3) + "" + word1.charAt(2) + word1.charAt(1) + word1.charAt(0);
+
 
         System.out.println("word2 = " + word2);
 
