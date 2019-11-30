@@ -49,10 +49,10 @@ public class IndexOfWith2Parameters {
         // I just want to know what is the second word
         // the word in between first space and second space is second word
         int firstSpaceLocation = name.indexOf(" ");
-        int secondSpace = name.indexOf(" ", firstSpaceLocation + 1);
+        int secondSpaceLocation = name.indexOf(" ", firstSpaceLocation + 1);
 
         System.out.println("Second word in this sentence is "
-                + name.substring(firstSpaceLocation + 1, secondSpace));
+                + name.substring(firstSpaceLocation + 1, secondSpaceLocation));
 
 
     }
