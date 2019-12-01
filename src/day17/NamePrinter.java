@@ -7,7 +7,7 @@ public class NamePrinter {
         // if you have complain in life : call 1-800-Alexander
         String name = "Alexander";
 
-        // get each and every character and pring them out vertically
+        // get each and every character and print them out vertically
         int x = 0;
         System.out.println(name.charAt(x));
         ++x;
@@ -35,6 +35,10 @@ public class NamePrinter {
 
         System.out.println(name.charAt(x));
         ++x;
+
+        System.out.println(name.charAt(x));
+        ++x;
+
 //        System.out.println( name.charAt(0) );
 //        System.out.println( name.charAt(1) );
 //        System.out.println( name.charAt(2) );
