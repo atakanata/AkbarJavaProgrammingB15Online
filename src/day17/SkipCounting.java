@@ -16,10 +16,6 @@ public class SkipCounting {
 
         }
 
-        // write a program to print out a even number from 0 to 50 ;
-        // write a program to print out a odd number from 0 to 50 ;
-
-
     }
 
 }
