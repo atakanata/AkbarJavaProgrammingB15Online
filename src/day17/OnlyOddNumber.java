@@ -14,6 +14,7 @@ public class OnlyOddNumber {
             if (x % 2 != 0) { // x % 2 == 1 does same thing
                 System.out.println(x + " is odd number");
             }
+
             --x;
         }
 
