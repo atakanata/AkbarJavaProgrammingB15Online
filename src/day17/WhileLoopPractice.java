@@ -25,7 +25,7 @@ public class WhileLoopPractice {
         while (counter <= 5) {
 
             System.out.print(counter + " ");
-            ++counter;
+            ++counter; // counter = counter + 1 ;
 
         }
         System.out.println();
@@ -41,7 +41,7 @@ public class WhileLoopPractice {
 
         while (counter > 1) {
 
-            --counter;
+            --counter;  // counter = counter - 1 ;
             System.out.print(counter + " ");
 
         }
