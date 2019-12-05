@@ -20,6 +20,8 @@ public class PalindromeTest {
 
         System.out.println("reversedName = " + reversedName);
 
+        // MAKE THIS CODE DOES NOT CARE ABOUT SPACES WHILE CHECKING
+
         // Check whether reversed name is equal without case checking
         if (name.equalsIgnoreCase(reversedName)) {
 
