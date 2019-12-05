@@ -6,7 +6,7 @@ public class SumOfOdd {
 
 //// hint : create a variable sum as int
 /// loop through 10-100
-////  in each iteration check it's a even number or not
+////  in each iteration check it's a odd number or not
 ////  if it's add that number to sum
 //
 //    eventually after the loop -->> print out sum value
