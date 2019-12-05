@@ -34,7 +34,6 @@ public class FindDogInASentence {
                 System.out.println("BINGO !!!! AT " + x);
             }
 
-
         }
 
 
