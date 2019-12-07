@@ -27,7 +27,7 @@ public class SearchingSomethingInString2 {
         System.out.println("lastCharIndex = " + lastCharIndex);
 
         System.out.println("---2 chars ---");
-        //for (int x = 0; x < charCount-2 ; x++) {
+        //for (int x = 0; x <= charCount-2 ; x++) {
         for (int x = 0; x <= lastCharIndex - 1; x++) {
 
             String current2Chars = myName.substring(x, x + 2);
