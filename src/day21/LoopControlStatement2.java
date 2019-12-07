@@ -12,7 +12,7 @@ public class LoopControlStatement2 {
         for (int x = 1; x <= 10; x++) {
 
             if (x % 2 == 1) {
-                continue;
+                continue; // when this line reaches it goes back to line 12
             }
 
             System.out.println(x);
