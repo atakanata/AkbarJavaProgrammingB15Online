@@ -64,6 +64,8 @@ public class WakeUpTask1_NamePrinter {
             System.out.print(twoChar + "->");
 
         }
+
+
         System.out.println("------");
         System.out.println("---3 chars ---");
         for (int x = 0; x <= lastCharIndex - 2; x++) {
