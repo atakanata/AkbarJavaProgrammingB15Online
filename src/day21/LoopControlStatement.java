@@ -34,8 +34,10 @@ public class LoopControlStatement {
 
             System.out.println("current sum is " + sum);
 
-
-            if (sum > 40) {
+            // here we are checking whether after adding the next number
+            // it will go over 40 or not ,
+            // that's why we should use sum + x to see whether it will go over before we acrually add them
+            if (sum + x > 40) {
                 break;
             }
             // we need to add the sum after we make sure it did not go over 40
