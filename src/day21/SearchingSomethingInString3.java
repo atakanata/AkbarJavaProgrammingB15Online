@@ -27,7 +27,7 @@ public class SearchingSomethingInString3 {
         System.out.println("lastCharIndex = " + lastCharIndex);
 
         System.out.println("---3 chars ---");
-        //for (int x = 0; x < charCount-3 ; x++) {
+        //for (int x = 0; x <= charCount-3 ; x++) {
         for (int x = 0; x <= lastCharIndex - 2; x++) {
 
             // saving the current 3 characters
