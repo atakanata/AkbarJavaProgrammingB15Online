@@ -19,34 +19,30 @@ public class CountSomethingInString {
         //  because last chance to get 3 characters is -->> 2 characters before last character
 
 
-        String myName = "Amelia Israfil Hajitev mehmet Hajitev Amelia Behlia Ashr";
+        String myName = "Amelia Israfil Hajitev mehmet Hajitev Amelia  Ashr Behlia";
 
-        int charCount = myName.length();
+        int charCount = myName.length();   // character count
         System.out.println("charCount = " + charCount);
-        int lastCharIndex = charCount - 1;
+        int lastCharIndex = charCount - 1;  // last character index is always 1 less than character count
         System.out.println("lastCharIndex = " + lastCharIndex);
 
-
+        // counting something , always create a variable to store the count as int
         int counter = 0;
 
-        System.out.println("---3 chars ---");
-        //for (int x = 0; x < charCount-3 ; x++) {
+        System.out.println("---counting certain 3 chars ---");
+        //for (int x = 0; x < charCount-3 ; x++) {  // will do the same in different way
         for (int x = 0; x <= lastCharIndex - 2; x++) {
 
             // saving the current 3 characters
             String current3Chars = myName.substring(x, x + 3);
-
+            // increase the count only if the 3 characters you are going through is what you are checking for
             if (current3Chars.equalsIgnoreCase("lia")) {
-
-                System.out.println("The index of lia is " + x);
-                //counter = counter + 1 ;
-                //counter +=1 ;
-                //counter++ ;
-                ++counter;
-
+                // this is the code to actually increase the count by one
+                ++counter; //counter = counter + 1 ;    //counter +=1 ;   //counter++ ;
             }
 
         }
+        // printing out the final result as one.
         System.out.println("counter = " + counter);
 
     }
