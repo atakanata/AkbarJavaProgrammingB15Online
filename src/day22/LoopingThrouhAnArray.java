@@ -16,6 +16,7 @@ public class LoopingThrouhAnArray {
 
         // how do we get the size of any array object
         // array object has a property called length
+        // arrayVariable.length will give you the count of items
         int itemCount = scores.length;
         int lastItemIndex = itemCount - 1;
 
@@ -37,9 +38,9 @@ public class LoopingThrouhAnArray {
 //        System.out.println(scores[3]);
 
 
-        // how do we get the char count of a String
-        String name = "Jon Snow";
-        int charCount = name.length();
+//        // how do we get the char count of a String
+//        String name = "Jon Snow";
+//        int charCount = name.length();
 
 
     }
