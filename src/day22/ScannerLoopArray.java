@@ -16,7 +16,6 @@ public class ScannerLoopArray {
             System.out.println("Enter your number " + (x + 1));
             // filling up the array value with scanner
             numbers[x] = scan.nextInt();
-
         }
         // printing out what's inside the array
         for (int x = 0; x < numbers.length; x++) {
