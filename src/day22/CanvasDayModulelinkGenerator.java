@@ -24,13 +24,25 @@ public class CanvasDayModulelinkGenerator {
 //        for (int moduleNumber = 3317; moduleNumber <=3317+35 ; moduleNumber++) {
 //            System.out.println(moduleNumber);
 //        }
-        for (int day = 21; day <= 56; day++) {
+//        for (int day = 21; day <= 56; day++) {
+//
+//            System.out.println(dayMsg + day);
+//            //  if day is 21 the number is 3317 according to requirement
+//            //  if day is 22 the number is 3318 according to requirement
+//
+//            System.out.println(baseURL + (3317 - 21 + day));
+//
+//        }
+
+        // 3297 is first day module ID BECAUSE I TOLD YOU SO
+        // get the link from day 1 till day 22
+        for (int day = 1; day <= 22; day++) {
 
             System.out.println(dayMsg + day);
-            //  if day is 21 the number is 3317 according to requirement
-            //  if day is 22 the number is 3318 according to requirement
+            //  if day is 1 the number is 3297 according to requirement
+            //  if day is 2 the number is 3298 according to requirement
 
-            System.out.println(baseURL + (3317 - 21 + day));
+            System.out.println(baseURL + (day + 3296));
 
         }
 
