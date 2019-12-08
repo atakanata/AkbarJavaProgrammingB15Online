@@ -19,7 +19,7 @@ public class ArrayIntro {
 
         // creating an array object with empty slot
         int[] scores = new int[4];
-        // assigning value to each index
+        // assigning value to each index one bye one
         scores[0] = 95;
         scores[1] = 70;
         scores[2] = 88;
