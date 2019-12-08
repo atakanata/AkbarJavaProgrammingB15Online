@@ -33,7 +33,8 @@ public class ArrayIntro {
         // updating the value at certain index
         scores[1] = 99;
         System.out.println(scores[1]);
-        // Once array is created with certain size , we CAN NOT CHANGE THE SIZE !!!
+        // Once array is created with certain size ,
+        // we CAN NOT CHANGE THE SIZE !!!
         // When you create new Array Object
         // it will get default value in each element
         int[] numbers = new int[3];
