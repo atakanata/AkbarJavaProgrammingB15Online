@@ -54,9 +54,9 @@ public class Practice_12_09 {
                 min = newNums[index];
             }
         }
-        System.out.println("Max is: " + max);
-        System.out.println("Second max is: " + secondMax);
-        System.out.println("Min is: " + min);
+        System.out.println("Max is : " + max);
+        System.out.println("Second max is : " + secondMax);
+        System.out.println("Min is : " + min);
     }
 
 }
