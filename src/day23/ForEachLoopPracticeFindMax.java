@@ -57,7 +57,7 @@ public class ForEachLoopPracticeFindMax {
 
         }
         System.out.println("maxSalary = " + max);
-
+        System.out.println("sum = " + sum);
 
         long[] salaries2 = new long[]{-100000L, -200000L, -150000L, -115000L, -60000L};
         long max2 = 0; //salaries[0] ;
