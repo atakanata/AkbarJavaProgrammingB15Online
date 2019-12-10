@@ -43,12 +43,17 @@ public class ForEachLoopPracticeFindMax {
         long[] salaries = new long[]{100000L, 200000L, 150000L, 115000L, 60000L};
         long max = salaries[0];
 
+        long sum = 0;
+
         for (long salary : salaries) {
             // check the current salary is more than max
             if (salary > max) {
                 // if so replace the existing value of max with current bigger salary
                 max = salary;
             }
+            // getting sum is always straightforward
+            sum += salary;  //sum = sum + salary;
+
 
         }
         System.out.println("maxSalary = " + max);
@@ -56,7 +61,7 @@ public class ForEachLoopPracticeFindMax {
 
         long[] salaries2 = new long[]{-100000L, -200000L, -150000L, -115000L, -60000L};
         long max2 = 0; //salaries[0] ;
-        // YOU CAN NOT PICK SOMETHING THAT YOU DONT HAVE INSIDE ARRAY AS INITIAL VALUE
+        // YOU CAN NOT PICK SOMETHING THAT YOU DON'T HAVE INSIDE ARRAY AS INITIAL VALUE
 
 
     }
