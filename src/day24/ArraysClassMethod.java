@@ -52,7 +52,7 @@ public class ArraysClassMethod {
         String pricesString = Arrays.toString(prices);
         System.out.println("pricesString = " + pricesString);
 
-        // we are looping over a String not an array so we after at last character finishes
+        // we are looping over a String not an array so we keep looping until last character finishes
         // to make it obvious that [ ] and , are part of the String we got from the method
         for (int i = 0; i < pricesString.length(); i++) {
             System.out.println("character at index " + i + " is : " + pricesString.charAt(i));
