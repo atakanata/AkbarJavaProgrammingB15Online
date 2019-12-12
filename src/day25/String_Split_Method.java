@@ -29,7 +29,7 @@ public class String_Split_Method {
         // split by letter e
         String[] splitBy_e_Arr = sentence2.split("e");
         System.out.println("splitBy_e_Arr = " + Arrays.toString(splitBy_e_Arr));
-
+        // using for each loop to iterate over the resulting array
         for (String eachPiece : splitBy_e_Arr) {
             System.out.println("eachPiece = <" + eachPiece + ">");
         }
