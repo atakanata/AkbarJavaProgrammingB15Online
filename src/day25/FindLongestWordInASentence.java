@@ -16,6 +16,7 @@ public class FindLongestWordInASentence {
         // and check whether the length of current word is more than longestWord
         // if it's I will assign the longest word value to current word i am looking at
 
+        // assume the first word is the longest word before checking
         String longestWord = allWords[0];
 
         for (String currentWord : allWords) {
