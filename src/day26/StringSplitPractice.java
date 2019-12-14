@@ -21,7 +21,7 @@ public class StringSplitPractice {
         for (int x = 0; x < studentCount; x++) {
 
             String name = namesArrays[x];  // Abbos // A-b-b-o-s-
-            System.out.println("Spelling = " + name);
+            System.out.print("Spelling " + name + " : \t "); // for nicer output
             // name is String we use length() method
             for (int i = 0; i < name.length(); i++) {
 
