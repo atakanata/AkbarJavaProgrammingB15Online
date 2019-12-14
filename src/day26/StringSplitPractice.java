@@ -22,7 +22,7 @@ public class StringSplitPractice {
 
             String name = namesArrays[x];  // Abbos // A-b-b-o-s-
             System.out.println("Spelling = " + name);
-
+            // name is String we use length() method
             for (int i = 0; i < name.length(); i++) {
 
                 System.out.print(name.charAt(i) + "-");
