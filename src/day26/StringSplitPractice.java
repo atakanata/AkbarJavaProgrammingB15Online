@@ -33,7 +33,7 @@ public class StringSplitPractice {
 
         }
 
-
+        // This is how we do it for one String and we are repeating this for all String items in array
 //        String name = namesArrays[0] ;  // Abbos // A-b-b-o-s-
 //
 //        for (int i = 0; i < name.length(); i++) {
