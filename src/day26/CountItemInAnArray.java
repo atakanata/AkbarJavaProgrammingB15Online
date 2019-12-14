@@ -27,10 +27,21 @@ public class CountItemInAnArray {
             }
 
         }
-
-        // COUNT THE HERO WITH WITH THE NAME CONTAINS BLACK
-
         System.out.println("countOfItem = " + countOfItem);
+        // COUNT THE HERO WITH WITH THE NAME CONTAINS BLACK IN CASE INSENSITIVE MANNER
+        int cntOfBlackInName = 0;
+
+        for (String eachHero : marvelHeroes) {
+            // in order to not care about the case , make all lowercase then check contains
+            if (eachHero.toLowerCase().contains("black")) {
+                cntOfBlackInName++;
+            }
+
+        }
+        System.out.println("cntOfBlackInName = " + cntOfBlackInName);
+
+
+
 
 
 
