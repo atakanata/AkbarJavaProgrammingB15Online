@@ -26,9 +26,7 @@ public class ExcelVisualizer {
         // to store this in another array object
         int[][] sheet = new int[][]{row1, row2, row3, row4, row5, row6};
 
-
         int[][] myExcel = {{10, 27}, {87, 99, 100}, {90, 45}};
-
 
         // tell me how to print 100 and 90 from this array
         System.out.println(myExcel[1][2]);
@@ -36,8 +34,8 @@ public class ExcelVisualizer {
         // in this 2d array object , we have 3 1D array object stored
         System.out.println(myExcel.length);
         // how many item do I have in first item of this 2D array
-        System.out.println(Arrays.toString(myExcel[0]));
-        System.out.println(myExcel[0].length);
+        System.out.println(Arrays.toString(myExcel[0])); // seeing what's inside first 1D array
+        System.out.println(myExcel[0].length); // getting the length of first 1D array
 
 
 
