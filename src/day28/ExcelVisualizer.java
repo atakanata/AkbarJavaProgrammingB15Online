@@ -35,7 +35,17 @@ public class ExcelVisualizer {
         System.out.println(myExcel.length);
         // how many item do I have in first item of this 2D array
         System.out.println(Arrays.toString(myExcel[0])); // seeing what's inside first 1D array
-        System.out.println(myExcel[0].length); // getting the length of first 1D array
+
+//        System.out.println(myExcel[0].length); // getting the length of first 1D array
+//        System.out.println(myExcel[1].length); // getting the length of second 1D array
+//        System.out.println(myExcel[2].length); // getting the length of third 1D array
+//
+        // how can I make above code better by loop and get the item count of each 1d array
+        for (int x = 0; x < myExcel.length; x++) {
+
+            System.out.println("Item number " + x + " length is : " + myExcel[x].length);
+
+        }
 
 
 
