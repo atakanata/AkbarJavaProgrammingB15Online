@@ -11,6 +11,7 @@ public class StringPractice {
         // Hero code is Superman and Identity is Clark Kent
         // The initial of the Hero is CK
 
+        // PLAIN ENGLISH LOGIC :
         // LOGIC 1 : split this String by dash -
         //  to get 2 pieces of String into a String array
         String[] heroSplitted = hero1.split("-");
@@ -48,7 +49,7 @@ public class StringPractice {
         System.out.println("lastName = " + lastName);
         System.out.println("Initial of the hero is : " + fullName.charAt(0) + lastName.charAt(0));
 
-
+        // TRY THE SAME THING FOR ARRAY OF HEROES
 
 
 
