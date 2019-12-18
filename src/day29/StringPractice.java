@@ -6,7 +6,7 @@ public class StringPractice {
 
     public static void main(String[] args) {
 
-        String hero1 = "Superman-Clark Kent";
+        String hero1 = "Superman-Clark J Kent";
         // Task :
         // Hero code is Superman and Identity is Clark Kent
         // The initial of the Hero is CK
