@@ -23,7 +23,7 @@ public class FillUpStringArray {
         }
         System.out.println("strArr = " + Arrays.toString(strArr));
 
-        String str = new String("ABC");   // THIS IS STRING OBEJCT WITH VALUE ABC
+        String str = new String("ABC");   // THIS IS STRING OBJECT WITH VALUE ABC
         String[] strArr2 = new String[5]; // EMPTY STRING ARRAY WITH CAPACITY 5 ,
         strArr2[0] = "i LOVE JAVA";
         strArr2[1] = "i LOVE JAVA";
