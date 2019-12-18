@@ -31,8 +31,14 @@ public class HeroIdentity {
             stars = stars + "*"; //  stars += "*";
 
         }
-        System.out.println(fullName);
-        System.out.println(stars);
+//        System.out.println(fullName);
+//        System.out.println(stars);
+
+        String heroX = heroCode + "-" + stars;
+        System.out.println("hero1 = " + hero1);
+        System.out.println("heroX = " + heroX);
+
+
 
 
     }
