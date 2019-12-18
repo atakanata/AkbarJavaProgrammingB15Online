@@ -17,8 +17,8 @@ public class StringPractice {
         String[] heroSplitted = hero1.split("-");
         System.out.println("heroSplitted = " + Arrays.toString(heroSplitted));
 
-        String heroCode = heroSplitted[0];
-        String fullName = heroSplitted[1];
+        String heroCode = heroSplitted[0];  // hero code
+        String fullName = heroSplitted[1];  // full name for next task
 
         // Hero code is Superman and Identity is Clark Kent
         //System.out.println("Hero code is " + heroSplitted[0] + " and Identity is " + heroSplitted[1] );
