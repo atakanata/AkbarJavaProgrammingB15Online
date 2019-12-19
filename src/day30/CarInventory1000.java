@@ -1085,7 +1085,7 @@ public class CarInventory1000 {
 
         }
         System.out.println("Count Of Cars with only 2 character in their model  = " + cntOf2CharModel);
-
+        // Sorting entire Array
         Arrays.sort(cars);
         System.out.println("cars = " + Arrays.toString(cars));
 
