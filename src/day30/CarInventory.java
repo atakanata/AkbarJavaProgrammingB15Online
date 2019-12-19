@@ -13,7 +13,24 @@ public class CarInventory {
                 "Oldsmobile-Achieva",
                 "Honda-Civic"};
         // Task1 : count Chevrolet and civic
+        // we can use contains , startWith , endWith to get same result
+        int chevyCNT = 0;
+        int civicCNT = 0;
 
+        for (String eachCar : cars) {
+
+            //if(eachCar.startsWith("Chevrolet")){
+            // what if I want case insensitivity
+            if (eachCar.toLowerCase().startsWith("chevrolet")) {
+                chevyCNT++;
+            }
+            if (eachCar.toUpperCase().contains("CIVIC")) {
+                civicCNT++;
+            }
+
+        }
+        System.out.println("chevyCNT = " + chevyCNT);
+        System.out.println("civicCNT = " + civicCNT);
 
     }
 
