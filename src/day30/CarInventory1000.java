@@ -1,5 +1,7 @@
 package day30;
 
+import java.util.Arrays;
+
 public class CarInventory1000 {
 
     public static void main(String[] args) {
@@ -1072,23 +1074,20 @@ public class CarInventory1000 {
         int cntOf2CharModel = 0;
         for (String eachCar : cars) {
 
-            String[] eachCarSplitted = eachCar.split("-");
+            String[] eachCarSplitted = eachCar.split("-", 2);
             String model = eachCarSplitted[1];
             // model is second item in splited array (at index 1)
             //if( eachCarSplitted[1].length() == 2  ) {
             if (model.length() == 2) {
                 cntOf2CharModel++;
-                //System.out.println(eachCar);
+                System.out.println(eachCar);
             }
 
         }
         System.out.println("Count Of Cars with only 2 character in their model  = " + cntOf2CharModel);
 
-
-
-
-
-
+        Arrays.sort(cars);
+        System.out.println("cars = " + Arrays.toString(cars));
 
     }
 
