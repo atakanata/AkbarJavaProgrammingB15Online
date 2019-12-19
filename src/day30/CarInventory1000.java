@@ -1010,20 +1010,35 @@ public class CarInventory1000 {
         int chevyCNT = 0;
         int civicCNT = 0;
 
-        for (String eachCar : cars) {
+        for (int x = 0; x < cars.length; x++) {
 
-            //if(eachCar.startsWith("Chevrolet")){
-            // what if I want case insensitivity
-            if (eachCar.toLowerCase().startsWith("chevrolet")) {
+            //System.out.println( cars[x]   );
+            if (cars[x].contains("Chevrolet")) {
                 chevyCNT++;
             }
-            if (eachCar.toUpperCase().contains("CIVIC")) {
+
+            if (cars[x].contains("Civic")) {
                 civicCNT++;
             }
 
         }
         System.out.println("chevyCNT = " + chevyCNT);
         System.out.println("civicCNT = " + civicCNT);
+
+
+        // TASK 2 : PRINT ALL LOCATION OF Honda-Civic in this array
+        // Honda-Civic
+        for (int x = 0; x < cars.length; x++) {
+
+            //if( cars[x].contains("Civic") ){
+            if (cars[x].equals("Honda-Civic")) {
+                System.out.println("Civic found at location : " + x);
+            }
+
+        }
+
+
+
 
     }
 
