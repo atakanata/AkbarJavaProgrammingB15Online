@@ -10,11 +10,20 @@ public class MethodPractice3 {
     // does not need any external data when being called   : (nothing inside)
 
     // Create a method called countDownFrom20tillOne
+    public static void countDownFrom20tillOne() {
+
+        for (int x = 20; x > 0; x--) {
+            System.out.print(x + " ");
+        }
+        System.out.println();
+    }
+
     // Create a method to print odd numbers from 1-100 : printOddNumbers1to100()
     // Create a method to spell your name :  Seda -->> S-e-d-a
 
     public static void main(String[] args) {
 
+        countDownFrom20tillOne();
 
     }
 
