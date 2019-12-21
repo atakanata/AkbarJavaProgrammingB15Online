@@ -16,6 +16,9 @@ public class Calculator_V2 {
     }
 
     // the order of method parameter decide how caller of this method should call it
+    // if it was in this order (char operator, int num1, int num2)
+    // we would have to call it in this way : calculate('-', 10, 30);
+
     public static void calculate(int num1, int num2, char operator) {
 
         switch (operator) {
