@@ -12,6 +12,9 @@ public class SeasonChecker {
         String mySeason = "AAAA";
         decideSeasonAction(mySeason);
 
+        System.out.println("AAAA");  /// you can directly pass AAAA to the method
+        System.out.println(mySeason);// or you can pass a variable that has value AAAA to the method
+
     }
 
     /**
