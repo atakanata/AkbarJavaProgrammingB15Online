@@ -1,6 +1,6 @@
 package day31;
 
-public class MethodPratice2 {
+public class MethodPractice2 {
 
     // write piece of reusable code to count from 1 to 10
     // give a name count1to10                               : method name
@@ -16,7 +16,7 @@ public class MethodPratice2 {
         //System.out.println();
         count1to10();
         // optionally you can call using classname.methodName();
-        MethodPratice2.count1to10();
+        MethodPractice2.count1to10();
 
 
     }
