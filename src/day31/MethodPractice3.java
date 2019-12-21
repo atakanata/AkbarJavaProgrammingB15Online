@@ -17,13 +17,24 @@ public class MethodPractice3 {
         }
         System.out.println();
     }
-
     // Create a method to print odd numbers from 1-100 : printOddNumbers1to100()
+
+    public static void printOddNumbers1to100() {
+
+        for (int i = 0; i <= 100; i++) {
+            if (i % 2 == 1) {
+                System.out.print(i + " ");
+            }
+        }
+
+    }
     // Create a method to spell your name :  Seda -->> S-e-d-a
 
     public static void main(String[] args) {
 
         countDownFrom20tillOne();
+        printOddNumbers1to100();
+
 
     }
 
