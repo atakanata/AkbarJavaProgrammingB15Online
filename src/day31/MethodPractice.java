@@ -15,6 +15,11 @@ public class MethodPractice {
         calculateMathProblem();
 
     }
+    // CAN NOT CREATE 2 METHODS WITH SAME EXACT METHOD HEADER
+    // EVEN THOUGH IT HAS DIFFERENT THINGS INSIDE
+//    public static void sayHelloWorld7Times() {
+//        System.out.println("DO SOMETHING DIFFERENT");
+//    }
 
     //  Create a method to print 7 line of hello and call it sayHelloWorld7Times
     public static void sayHelloWorld7Times() {
