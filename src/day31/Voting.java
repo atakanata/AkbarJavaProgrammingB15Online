@@ -14,7 +14,6 @@ public class Voting {
         //System.out.println(age);
 
     }
-
     // This method has one int parameter named age
     // whoever calling this method, need to provide a number
     // it will set the value of age into that number
