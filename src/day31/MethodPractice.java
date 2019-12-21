@@ -16,7 +16,7 @@ public class MethodPractice {
 
     }
     // CAN NOT CREATE 2 METHODS WITH SAME EXACT METHOD HEADER
-    // EVEN THOUGH IT HAS DIFFERENT THINGS INSIDE
+    // EVEN THOUGH IT HAS DIFFERENT THINGS INSIDE the method
 //    public static void sayHelloWorld7Times() {
 //        System.out.println("DO SOMETHING DIFFERENT");
 //    }
