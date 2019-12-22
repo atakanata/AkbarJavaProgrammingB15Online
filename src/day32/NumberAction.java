@@ -10,6 +10,28 @@ public class NumberAction {
 
     }
 
+    /**
+     * * numberComparision
+     * * this method has 2 parameters called num1 and num2
+     * * if num1 is more than num2 print num1 is more than num2
+     * * if num2 is more than num1 print num2 is more than num1
+     * * if num2 are equals num1 print they are equal
+     * *
+     *
+     * @param number1
+     * @param number2
+     */
+    public static void numberComparision(int number1, int number2) {
+
+        if (number1 > number2) {
+            System.out.println("num1 is more than num2");
+        } else if (number2 > number1) {
+            System.out.println("num2 is more than num1");
+        } else {
+            System.out.println("they are equal");
+        }
+    }
+
 
     /**
      * Create static void methods as below
