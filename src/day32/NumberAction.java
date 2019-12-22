@@ -8,6 +8,10 @@ public class NumberAction {
         repeatString("DO NOT TOUCH WORKING CODE", 10);
 
         skipCountBy3From0to50();
+        countDownByEvenNumberFromXtoY(10, 6);
+        countDownByEvenNumberFromXtoY(6, 10);
+        countDownByEvenNumberFrom50to0();
+
     }
 
     /**
@@ -57,6 +61,41 @@ public class NumberAction {
     }
 
     /**
+     * * countDownByEvenNumberFrom50to0
+     * * * create a method that has no parameter
+     * * and count Down By Even Number From 50 to 0
+     * * for example 50 , 48 , 46 .....0
+     */
+    public static void countDownByEvenNumberFrom50to0() {
+
+//            for (int i = 50; i >=0 ; i--) {
+//                if(i%2==0){
+//                    System.out.print(i+ " ");
+//                }
+//            }
+//            System.out.println();
+        countDownByEvenNumberFromXtoY(50, 0);
+    }
+
+    /**
+     * instead of countDownByEvenNumberFrom50to0
+     * now count Down By EvenNumber From x to y
+     *
+     * @param x
+     * @param y
+     */
+    public static void countDownByEvenNumberFromXtoY(int x, int y) {
+        //6  6 >= 10
+        for (int i = x; i >= y; i--) {
+            if (i % 2 == 0) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println();
+    }
+
+
+    /**
      * Create static void methods as below
      *
      *
@@ -65,10 +104,6 @@ public class NumberAction {
      * * create a method that has no parameter
      * and skip count by 3 from 0 to 50
      *
-     * countDownByEvenNumberFrom50to0
-     * * create a method that has no parameter
-     * and count Down By Even Number From 50 to 0
-     * for example 50 , 48 , 46 .....0
      *
      * print1toX
      * * create a method that has 1 int parameter called x
