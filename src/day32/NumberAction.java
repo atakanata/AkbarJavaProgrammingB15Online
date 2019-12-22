@@ -4,17 +4,15 @@ public class NumberAction {
 
     public static void main(String[] args) {
 
+        repeatString("Java", 3);
+        repeatString("DO NOT TOUCH WORKING CODE", 10);
+
 
     }
 
+
     /**
      * Create static void methods as below
-     *
-     * numberComparision
-     * this method has 2 parameters called num1 and num2
-     * if num1 is more than num2 print num1 is more than num2
-     * if num2 is more than num1 print num2 is more than num1
-     * if num2 are equals num1 print they are equal
      *
      * String repeater
      * this method has 2 parameters
@@ -38,6 +36,22 @@ public class NumberAction {
      *
      *
      */
+
+    /*
+     * repeatString
+     *  this method has 2 parameters
+     *     String strToRepeat and int count
+     *    repeat printing the string as many time as <count> number define
+           repeatString("Java", 3) -->> Java Java Java
+    * */
+    public static void repeatString(String strToRepeat, int count) {
+
+        for (int i = 1; i <= count; i++) {
+            System.out.print(strToRepeat + " ");
+        }
+        System.out.println();
+
+    }
 
 
 }
