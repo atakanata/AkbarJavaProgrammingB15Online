@@ -43,6 +43,18 @@ public class NumberAction {
         }
     }
 
+    /**
+     * This method will pring from 1 to the number user passed
+     *
+     * @param x
+     */
+    public static void print1toX(int x) {
+
+        for (int i = 1; i <= x; i++) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
 
     /**
      * Create static void methods as below
