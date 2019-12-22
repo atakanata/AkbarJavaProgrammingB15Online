@@ -26,7 +26,8 @@ public class CharacterActions {
      * we did similar action with printing Z-A
      */
     public static void printAlphabetInRange(char beginning, char ending) {
-
+        // this mean beginning character comes before ending character
+        // in ascii table
         if (beginning < ending) {
             System.out.println("WE NEED TO INCREMENT FROM " + beginning + " till " + ending);
 
@@ -34,7 +35,8 @@ public class CharacterActions {
                 System.out.print(iChar + " ");
             }
             System.out.println();
-
+            // this mean beginning character comes after ending character
+            // in ascii table
         } else if (beginning > ending) {
             System.out.println("WE NEED TO DECREMENT FROM " + beginning + " till " + ending);
 
