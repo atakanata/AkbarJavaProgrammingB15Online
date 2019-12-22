@@ -7,7 +7,18 @@ public class NumberAction {
         repeatString("Java", 3);
         repeatString("DO NOT TOUCH WORKING CODE", 10);
 
+        skipCountBy3From0to50();
+    }
 
+    /**
+     * skipCountBy3From0to50
+     */
+    public static void skipCountBy3From0to50() {
+
+        for (int i = 0; i < 50; i = i + 3) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
     }
 
     /**
@@ -36,10 +47,6 @@ public class NumberAction {
     /**
      * Create static void methods as below
      *
-     * String repeater
-     * this method has 2 parameters
-     *     String strToRepeat and int count
-     *    repeat printing the string as many time as <count> number define
      *
      * skipCountBy3From0to50
      *
