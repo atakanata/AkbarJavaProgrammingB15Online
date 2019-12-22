@@ -48,7 +48,7 @@ public class NumberAction {
     }
 
     /**
-     * This method will pring from 1 to the number user passed
+     * This method will print from 1 to the number user passed
      *
      * @param x
      */
@@ -94,32 +94,15 @@ public class NumberAction {
         System.out.println();
     }
 
-
-    /**
-     * Create static void methods as below
-     *
-     *
-     * skipCountBy3From0to50
-     *
-     * * create a method that has no parameter
-     * and skip count by 3 from 0 to 50
-     *
-     *
-     * print1toX
-     * * create a method that has 1 int parameter called x
-     * print from 1 to that number in one line
-     * print an empty line after the print.
-     *
-     *
-     */
-
     /*
      * repeatString
      *  this method has 2 parameters
      *     String strToRepeat and int count
      *    repeat printing the string as many time as <count> number define
            repeatString("Java", 3) -->> Java Java Java
-    * */
+     * @param strToRepeat
+     * @param count
+     */
     public static void repeatString(String strToRepeat, int count) {
 
         for (int i = 1; i <= count; i++) {
