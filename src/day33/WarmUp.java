@@ -29,7 +29,6 @@ public class WarmUp {
             // until 2nd character from the last
             result += name.charAt(i) + "-";
         }
-
         // YOUR CODE GOES HERE
         // result has everything but last character
         // so now we need to add last character back to the result
