@@ -4,14 +4,16 @@ public class WarmUp {
 
     public static void main(String[] args) {
 
-        String spelledName = getSpelledName("Serra");
-        System.out.println("spelledName = " + spelledName);
-        System.out.println(getSpelledName("Zeynep"));
+//        String spelledName = getSpelledName("Serra");
+//        System.out.println("spelledName = " + spelledName);
+//        System.out.println(getSpelledName("Zeynep"));
+
+        System.out.println(getSpelledName2("Irina"));
 
     }
 
     /**
-     * getSpelledName
+     * getSpelledName2
      * This method will put dash in between given String
      * for example : Akbar -->> A-k-b-a-r
      *
@@ -20,9 +22,18 @@ public class WarmUp {
      */
     public static String getSpelledName2(String name) {
         String result = "";
-        // YOUR CODE GOES HERE
+        // Keep adding dash until right before last character
+        // then concatenate last character
+        for (int i = 0; i < name.length() - 1; i++) {
+            // this loop will add dash after each character
+            // until 2nd character from the last
+            result += name.charAt(i) + "-";
+        }
 
-        return result;
+        // YOUR CODE GOES HERE
+        // result has everything but last character
+        // so now we need to add last character back to the result
+        return result + name.charAt(name.length() - 1);
 
     }
 
