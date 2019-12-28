@@ -11,8 +11,9 @@ public class LoginActivity {
 
         System.out.println("second run " + loginReturn("aaaa", "bbb"));
         // System.out.println(    loginVoid("aaaa" , "bbb")    ); CAN NOT DO IT WITH VOID METHOD
-        //boolean result2 = loginVoid("abc","efg");
+        //boolean result2 = loginVoid("abc","efg"); // no result to save!
 
+        // we want to continue with shopping scenario only if user signed in to the app
         if (loginReturn("user1", "abc123")) {
 
             System.out.println("Add Java Book to cart");
@@ -25,6 +26,12 @@ public class LoginActivity {
 
     }
 
+    /**
+     * A method that check username and password and print the result
+     *
+     * @param user
+     * @param password
+     */
     public static void loginVoid(String user, String password) {
 
         if (user.equals("user") && password.equals("abc123")) {
@@ -35,6 +42,12 @@ public class LoginActivity {
 
     }
 
+    /**
+     * A method that check username and password and generate result
+     * @param user
+     * @param password
+     * @return true only if user name and password are : user / abc123
+     */
     public static boolean loginReturn(String user, String password) {
 
         return user.equals("user") && password.equals("abc123");
