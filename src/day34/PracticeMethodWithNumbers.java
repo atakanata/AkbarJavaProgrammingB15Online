@@ -13,7 +13,7 @@ public class PracticeMethodWithNumbers {
         int result2 = build3DigitNumber(6, 14, 0);
         System.out.println("result2 = " + result2);
 
-        System.out.println(build3DigitNumber(16, 14, 90));
+        System.out.println(PracticeMethodWithNumbers.build3DigitNumber(16, 14, 90));
 
 
         // add the result of first 2 method call
