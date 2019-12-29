@@ -21,7 +21,7 @@ public class CharacterPractice {
             //isDigit accept char  // each char
             if (Character.isDigit(str.charAt(x))) {
                 System.out.println("str.charAt(" + x + ") = " + str.charAt(x));
-                // appeding number character to the result numsInStr
+                // appending number character to the result numsInStr
                 numsInStr += str.charAt(x);
             }
 
