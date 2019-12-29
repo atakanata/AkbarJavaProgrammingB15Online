@@ -113,7 +113,6 @@ public class WrapperClassMethods {
         System.out.println("Largest number double can hold : Double.MAX_VALUE = " + Double.MAX_VALUE  );
         System.out.println("Lowest  number double can hold : Double.MIN_VALUE = " + Double.MIN_VALUE  );
 
-
     }
 
 }
