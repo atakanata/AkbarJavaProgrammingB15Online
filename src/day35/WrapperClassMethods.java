@@ -76,7 +76,7 @@ public class WrapperClassMethods {
 
         System.out.println("\n-----------CHARACTER-----------------");
 
-        Character charObject = Character.valueOf('a');
+        Character charObject = Character.valueOf('a');  // "A123b3W423cc4523B $$ aa 77J JsG8 2347SDFSJF"
         System.out.println("Get Character Object-> Character.valueOf('a') = " + Character.valueOf('a') );
         System.out.println("Character.isDigit('7') = "      + Character.isDigit('7'));
         System.out.println("Character.isLetter('A') = "     + Character.isLetter('A'));
