@@ -35,7 +35,17 @@ public class CharacterPractice2 {
             }
         }
         System.out.println("sum = " + sum);
+        // for loop version
+        int sumForLoop = 0;
+        for (int x = 0; x < str.length(); x++) {
+            //isDigit accept char  // each char
+            if (Character.isDigit(str.charAt(x))) {
+                // appending number character to the result numsInStr
+                sumForLoop += Integer.parseInt(str.charAt(x) + "");
+            }
 
+        }
+        System.out.println("sumForLoop = " + sumForLoop);
 
     }
 
