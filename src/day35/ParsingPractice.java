@@ -15,7 +15,11 @@ public class ParsingPractice {
         // LOGIC : split by space, parse count and price, do calculation
 
         String[] allWords = sentence.split(" ");
-        int count = Integer.parseInt(allWords[2]);
+        //int count = Integer.parseInt(allWords[2]); // parse return primitive
+        // this will also give you same result
+        // valueOf return an object then unbox it and save it into count
+        int count = Integer.valueOf(allWords[2]); // value of return object
+
 
         // getting the last element of any array we use index length-1
         // getting the second last element of any array we use index length-2
