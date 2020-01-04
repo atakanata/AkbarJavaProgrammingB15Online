@@ -28,6 +28,7 @@ public class ArrayListIntro {
         // ArrayList is one type of List
         // Just like Dog is one type of Animal
         List<String> myLst = new ArrayList<>();
+        List<Integer> myLst2 = new ArrayList<>();
 
 
     }
