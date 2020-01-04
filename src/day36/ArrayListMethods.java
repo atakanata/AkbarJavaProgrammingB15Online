@@ -25,10 +25,25 @@ public class ArrayListMethods {
         System.out.println("Counting items using lst.size() = " + lst.size());
 
         // Getting items inside ArrayList object
-        System.out.println("First item is : lst.get(0) = " + lst.get(0));
+        System.out.println("\nFirst item is : lst.get(0) = " + lst.get(0));
+        System.out.println("Second item is : lst.get(1) = " + lst.get(1));
+        System.out.println("Third item is : lst.get(2) = " + lst.get(2));
+        System.out.println("Fourth item is : lst.get(3) = " + lst.get(3));
 
+        for (int x = 0; x < lst.size(); x++) {
 
+            System.out.println(" item " + lst.get(x));
+
+        }
         // TASK : GET THE SUM OF ABOVE ARRAYLIST ITEMS
+        long sum = 0;
+
+        for (int x = 0; x < lst.size(); x++) {
+
+            sum = sum + lst.get(x);
+
+        }
+        System.out.println("sum = " + sum);
 
 
     }
