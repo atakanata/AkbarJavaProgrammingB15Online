@@ -37,15 +37,22 @@ public class ArrayListMethods {
         }
         // TASK : GET THE SUM OF ABOVE ARRAYLIST ITEMS
         long sum = 0;
-
         for (int x = 0; x < lst.size(); x++) {
-
-            sum = sum + lst.get(x);
-
+            sum = sum + lst.get(x); // x in here is index , so it's data type int
         }
         System.out.println("sum = " + sum);
 
 
-    }
+        // TASK : GET THE MAX OF ABOVE ARRAYLIST ITEMS
+        long max = lst.get(0);
+        for (int x = 0; x < lst.size(); x++) {
 
+            if (lst.get(x) > max) {
+                max = lst.get(x);
+            }
+
+        }
+        System.out.println("max = " + max);
+
+    }
 }
