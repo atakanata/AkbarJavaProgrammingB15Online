@@ -1,6 +1,8 @@
 package day36;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 
 /**
  * @author : Akbar
@@ -24,7 +26,7 @@ public class ArrayListPracticeDemo {
         lst.add(3,"Tony Stark");
 
 
-        // to see what's inside array (yep , just print it out directly)
+        // to see what's inside ArrayList (yep , just print it out directly)
         System.out.println("Original lst = \n\t" + lst);
 
         //Counting the elements inside ArrayList
