@@ -24,6 +24,12 @@ public class MethodWithWrapperTypes {
         // if not specified otherwise , this is recommended
         sumAndPrint(23, 10);
 
+        System.out.println("-----------  method with int parameter ------");
+        printTheDoubledValue(10);
+        // Why we can pass Integer Object to a method that accept int
+        // It will turn it into int by the power of auto-unboxing
+        printTheDoubledValue(new Integer(10));
+
 
     }
 
@@ -32,6 +38,7 @@ public class MethodWithWrapperTypes {
      *
      * @param num1 type Integer , first number to add
      * @param num2 type Integer , second number to add
+     * @return
      */
     public static void sumAndPrint(Integer num1, Integer num2) {
         // We can not add two object
@@ -40,6 +47,18 @@ public class MethodWithWrapperTypes {
         // compiler will turn num1 and num2 into int so it can add them numerically
         // Integer to int conversion -->> auto-unboxing
         System.out.println(num1 + num2);
+
+    }
+
+    /**
+     * This method will print the doubled value of what user passed
+     *
+     * @param x
+     * @return
+     */
+    public static void printTheDoubledValue(int x) {
+
+        System.out.println("after doubling x = " + (x * 2));
 
     }
 
