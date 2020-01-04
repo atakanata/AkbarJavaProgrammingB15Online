@@ -25,6 +25,14 @@ public class MethodPractice2 {
 //        String str = "abc" ;
 //        String str2 = null ;
 
+        int x = 0;
+        Integer x1 = null;
+
+        // ONE THING THAT PRIMITIVE VARIABLES CAN NOT DO IS :
+        // WE CAN NOT ASSIGN IT TO NULL
+        // ANY NON-PRIMITIVE VARIABLES (REFERENCE VARIABLES )
+        // CAN ASSIGNED TO NULL VALUE
+        // TO DEFINE , IT'S NOT POINTING TO ANY OBJECT YET
 
     }
 
