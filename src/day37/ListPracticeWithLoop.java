@@ -36,17 +36,6 @@ public class ListPracticeWithLoop {
 
         System.out.println("index of 20 after inserting 100 at index 0 = " + nums.indexOf(20));
 
-
-        List<Integer> lst2 = new ArrayList<>();
-        lst2.add(44);
-        lst2.add(14);
-        lst2.add(34);
-        lst2.add(41);
-        lst2.add(19);
-
-        // insert 100 right after 34 : WE DO NOT KNOW WHERE IS 34 :
-
-
     }
 
 
