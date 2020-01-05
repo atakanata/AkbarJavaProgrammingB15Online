@@ -29,6 +29,8 @@ public class TeamMateListPractice {
         teamMates.add("Asiya");
         teamMates.add("Mike");
         teamMates.add("Guljannat");
+        teamMates.add("Support Team");
+
 
         System.out.println("teamMates = " + teamMates);
 
@@ -52,6 +54,37 @@ public class TeamMateListPractice {
             System.out.println("\tItem " + (x + 1) + " = " + teamMates.get(x));
 
         }
+
+        // print 2 items at a time
+        // for example :  1-2 , 2-3 , 3-4 , 4-5 , 5-6 ....
+        System.out.println("\nPrint 2 items at a time : ");
+        for (int x = 0; x <= teamMates.size() - 2; x++) {
+            //System.out.println("x and x+1 = " + x + "---" + (x+1) );
+            System.out.println("\t" + teamMates.get(x) + "---" + teamMates.get(x + 1));
+
+        }
+
+        // print 2 items at a time
+        // for example :  1-2 ,  3-4 , 5-6, 7-8 , 9-10
+        System.out.println("\nPrint 2 items at a time without repeating: ");
+        for (int x = 0; x <= teamMates.size() - 2; x += 2) {
+
+            //System.out.println("x and x+1 = " + x + "--" + (x+1) );
+            System.out.println("\t" + teamMates.get(x) + "---" + teamMates.get(x + 1));
+
+        }
+
+        // Challenge : Pair them up by 3
+
+        // concat everyone in one string separated by -
+        String result = "";
+        for (int i = 0; i < teamMates.size(); i++) {
+
+            result = result + teamMates.get(i) + "-";
+
+        }
+        System.out.println("result = " + result);
+        //TODO : Remove the last Dash
 
 
     }
