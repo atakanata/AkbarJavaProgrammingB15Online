@@ -11,9 +11,9 @@ public class MethodWithArrayListAsReturnType {
         System.out.println(getListFrom1ToFinalNumber(2));
         System.out.println(getListFrom1ToFinalNumber(20));
 
-        List<Integer> myList = getListFrom1ToFinalNumber(25);
+        List<Integer> blablaList = getListFrom1ToFinalNumber(25);
         ;
-        System.out.println("myList = " + myList);
+        System.out.println("blablaList = " + blablaList);
 
     }
 
