@@ -79,7 +79,15 @@ public class PriceListUpdateValuePractice {
 
         System.out.println("priceList after swapping first and last value : \n\t" + priceList);
 
+        //  slightly ore simplified version of above code
+        Double firstItem = priceList.get(0);
+        Double lastItem = priceList.get(lastIndex);
 
+        Double temp1 = firstItem;
+        priceList.set(0, lastItem);
+        priceList.set(lastIndex, temp1);
+
+        System.out.println("priceList after swapping back : \n\t" + priceList);
     }
 
 }
