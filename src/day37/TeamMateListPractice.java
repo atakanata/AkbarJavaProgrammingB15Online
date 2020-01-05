@@ -86,7 +86,12 @@ public class TeamMateListPractice {
         System.out.println("result = " + result);
         //TODO : Remove the last Dash
 
-
+        //TODO : How can we turn a List into a String and Store it ? and manipulated
+        String lstToString = teamMates.toString();
+        System.out.println("lstToString after replacing  = \n\t"
+                + lstToString.replace(", ", "-")
+                .replace("[", "")
+                .replace("]", ""));
     }
 
 }
