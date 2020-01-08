@@ -46,8 +46,6 @@ public class ArrayListWithStringPractice {
 //        // does this this contains an item with exact value of man
 //        System.out.println("superHeros.contains(\"man\") = "
 //                            + superHeros.contains("man"));
-
-
     }
 
 }
