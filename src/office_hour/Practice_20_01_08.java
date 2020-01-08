@@ -52,14 +52,6 @@ public class Practice_20_01_08 {
 //        System.out.println("numbers = " + numbers);
 
 
-        /**
-         * Given List of names with various character count,
-         * Remove any name with less than 2 characters
-         * and if any name has more than 10 character only keep 10 characters
-         * and if it has exactly 5 characters , reverse it
-         * Of course , Optionally make a method out of it.
-         *
-         */
 
 
     }
