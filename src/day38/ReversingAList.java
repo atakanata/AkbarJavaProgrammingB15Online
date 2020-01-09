@@ -20,7 +20,7 @@ public class ReversingAList {
         System.out.println("nums1 after  reversing = " + nums1);
         // after sorting in reverse order line 15
         // 700, 500 , 400, 200 ,100
-        Collections.sort(nums1, Collections.reverseOrder());
+        Collections.sort(nums1, Collections.reverseOrder()); // OR Comparator.reverseOrder()
         System.out.println("nums1 after sorting reverse order = " + nums1);
 
     }
