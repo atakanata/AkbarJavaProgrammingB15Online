@@ -24,6 +24,8 @@ public class JustIfStatement {
             System.out.println("go to court");
 
         }  // THERE IS NO ELSE , PROGRAM JUST MOVE ON
+        // if multiple conditions has no direct relatonship with each other 
+        // we can just create disconnected if statement like this
 
         System.out.println("THE END OF THE STORY !!!! MOVE ON !!!");
 
