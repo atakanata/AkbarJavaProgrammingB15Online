@@ -24,6 +24,7 @@ public class ArrayListBulkOperation {
 
         // Adding one list to another list
         // we want to add all items inside newItemsToAdd to newLst
+        // add all will take any type of List
         newLst.addAll(newItemsToAdd);
         System.out.println("new Lst with all items = " + newLst);
 
