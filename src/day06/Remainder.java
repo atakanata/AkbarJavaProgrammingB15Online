@@ -11,6 +11,10 @@ public class Remainder {
         // it's called modulus or remainder operator
         // it will give you the remaining result after
         // two whole number division
+//         Quick tip on / operator and % operator :
+//         10 apples divided by 3 people :
+//         each person get 3 apples and 1 apple will remain
+//         10/3 =3  , 10%3=1
 
         System.out.println(5 / 2);
 
