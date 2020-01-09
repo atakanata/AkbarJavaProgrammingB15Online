@@ -9,7 +9,7 @@ import java.util.List;
  * In other words,
  * removes from this list all of its elements that are not contained in the specified collection.
  */
-public class RetailAllPractice {
+public class RetainAllPractice {
 
     public static void main(String[] args) {
 
