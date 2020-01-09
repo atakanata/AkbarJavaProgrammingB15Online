@@ -4,7 +4,7 @@ public class ForLoopIntro {
 
     public static void main(String[] args) {
 
-
+        // Most used loop type
         // count 1 to 5
 
         // for loop () has 3 parts separated by ;
