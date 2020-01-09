@@ -8,6 +8,7 @@ public class WrapperClassIntro {
         // primitive data types are pure value has no attribute or behaviour
 
         // each primitive type has wrapper class that turn it into object so we can treat it as object
+        // all 8 wrapper classes also come with lots of static helper methods that readily be used 
 
         // this is the old not recommended way of create Integer Object
         Integer x1 = new Integer(10); // String str = new String("abc");
