@@ -24,9 +24,12 @@ public class RetailAllPractice {
 
         List<Integer> nums2 = new ArrayList<>(Arrays.asList(200, 300, 600, 700, 800));
         System.out.println("nums2 = " + nums2);
+        // This will only keep the common part of 2
         nums1.retainAll(nums2);
 
         System.out.println("nums1 = " + nums1);
+        nums2.retainAll(nums1);
+        System.out.println("nums2 = " + nums2);
 
 
     }
