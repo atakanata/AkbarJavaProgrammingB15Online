@@ -15,7 +15,6 @@ public class Practice_20_01_08_task2 {
          * and return List<Character> that contains each character.
          *
          */
-
         System.out.println(nameCharsToList("Sumeyye"));
 
         List<Character> resultList = nameCharsToList("Muge");
