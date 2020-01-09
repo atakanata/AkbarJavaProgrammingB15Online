@@ -39,13 +39,13 @@ public class ArrayListWithStringPractice {
         //  we need to decrease the index by one to stay at same index after removing
 
 
-//        // Do we have superman in the list ?
-//        System.out.println("superHeros.contains(\"Superman\") = "
-//                            + superHeros.contains("Superman"));
-//
-//        // does this this contains an item with exact value of man
-//        System.out.println("superHeros.contains(\"man\") = "
-//                            + superHeros.contains("man"));
+       // Do we have superman in the list ? YES!!
+       System.out.println("superHeros.contains(\"Superman\") = "
+                           + superHeros.contains("Superman"));
+
+       // does this this contains an item with exact value of man ? NO!!!
+       System.out.println("superHeros.contains(\"man\") = "
+                           + superHeros.contains("man"));
     }
 
 }
