@@ -140,46 +140,6 @@ public class ArrayListPractice {
 //        System.out.println("expensive item detail = "
 //                + productLst.get(maxPriceIndex));
 
-
-        System.out.println("\n-----------Task 7 ----------");
-//         * Task 7 : Update Dyson price to 80% off
-//         *          (Monthly payment (24 month) should also be calculated accordingly)
-        System.out.println(productLst.contains("Dyson")); // false
-        System.out.println(productLst.indexOf("Dyson")); // -1
-        //    System.out.println(productLst.startWith("Dyson")); // COMPILER ERROR
-        int dysonIndex = 0; // there is only one Dyson
-        for (int i = 0; i < productLst.size(); i++) {
-
-            if (productLst.get(i).startsWith("Dyson")) {
-                dysonIndex = i;
-            }
-        }
-
-        System.out.println("dysonIndex = " + dysonIndex);
-        String dysonDetails = productLst.get(dysonIndex);
-        String name = dysonDetails.split(",")[0];
-        double price = Double.parseDouble(dysonDetails.split(",")[1]);
-        double monthly = Double.parseDouble(dysonDetails.split(",")[2]);
-        dysonDetails = name + "," + price * 0.2 + "," + monthly * 0.2;
-
-        System.out.println("dysonDetails = " + dysonDetails);
-        productLst.set(dysonIndex, dysonDetails);
-        System.out.println("productLst = " + productLst);
-
-
-        System.out.println("\n-----------Task 8 ----------");
-//         * Task 8 : Count the items prices more than average price.
-
-        System.out.println("\n-----------Task 9 ----------");
-//         * OPTIONALLY :
-//         * Task 9 : Remove all the items has more than average price.
-
-        System.out.println("\n-----------Task 3 ArrayList Objects ----------");
-//         * ------------------------
-//         * Create 3 more ArrayList objects to separately store
-//         *  itemNames(String), prices(Double) , monthlyPayments(Double)  :
-
-
     }
 
 }
