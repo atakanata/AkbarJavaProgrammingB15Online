@@ -15,7 +15,8 @@ public class Garage2 {
 
         car1.goForward();
         car1.printCarAge();
-
+        car1.changeColorTo("Blue");
+        System.out.println("car1.color = " + car1.color);
         System.out.println("-----------");
 
         Car car2 = new Car();
