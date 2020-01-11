@@ -28,7 +28,7 @@ public class ArrayListPractice {
         System.out.println("productLst = " + productLst);
         System.out.println("productLst element count  = " + productLst.size());
 
-
+        System.out.println("-----------Task 1 for each loop ----------");
 //         * Task 1 : print only items name
         // This is for each version
         for (String eachProduct : productLst) {
@@ -38,6 +38,7 @@ public class ArrayListPractice {
             System.out.println("eachProduct name = " + namePart);
 
         }
+        System.out.println("\n-----------Task 1 for loop ----------");
         // This is for loop version
         for (int i = 0; i < productLst.size(); i++) {
             // we get each product by using get method of ArrayList in for loop
@@ -46,7 +47,7 @@ public class ArrayListPractice {
             String namePart = productLst.get(i).split(",")[0];
             System.out.println("eachProduct name = " + namePart);
         }
-
+        System.out.println("\n-----------Task 2 ----------");
 //         * Task 2 : print all the prices more than 500
         for (String eachProduct : productLst) {
 
@@ -57,6 +58,7 @@ public class ArrayListPractice {
             }
 
         }
+        System.out.println("\n-----------Task 3 ----------");
 //         * Task 3 : print average price
         double sum = 0;
         double average = 0;
@@ -72,7 +74,7 @@ public class ArrayListPractice {
         System.out.println("sum = " + sum);
         System.out.println("average = " + average);
 
-
+        System.out.println("\n-----------Task 4 ----------");
 //         * Task 4 : print all the items name that has less than 20$ monthly payment.
         for (String eachProduct : productLst) {
 
@@ -84,7 +86,7 @@ public class ArrayListPractice {
             }
 
         }
-        System.out.println("-----------Task 5 ----------");
+        System.out.println("\n-----------Task 5 ----------");
 //         * Task 5 : Print the monthly payments of all the iPhone no matter what model.
         for (String eachProduct : productLst) {
 
@@ -96,18 +98,56 @@ public class ArrayListPractice {
             }
 
         }
+        System.out.println("\n-----------Task 6 ----------with only price");
+//         * Task 6 : Print all information about most expensive item.
 
-//         * Task 6 : Print all information about most expensive items.
+        // assume first item price is max price before comparing
+//        double maxPrice = Double.parseDouble(productLst.get(0).split(",")[1]) ;
 
+//        for (String eachProduct : productLst) {
+//
+//            double price = Double.parseDouble(eachProduct.split(",")[1]);
+//            if(price> maxPrice){
+//                maxPrice = price ;
+//            }
+//
+//        }
+//        System.out.println("maxPrice = " + maxPrice);
+        System.out.println("\n-----------Task 6 ----------with product details");
+        // above solution will not work
+        // because we need the location of max price not the price itself
+        double maxPrice = Double.parseDouble(productLst.get(0).split(",")[1]);
+        int maxPriceIndex = 0;
+
+        for (int i = 0; i < productLst.size(); i++) {
+
+            // this is how we get each price part of items details
+            String priceStr = productLst.get(i).split(",")[1];
+            // this is how we turn the priceString into double data type
+            double price = Double.parseDouble(priceStr);
+            if (price > maxPrice) {
+                maxPrice = price;
+                maxPriceIndex = i;
+            }
+        }
+        System.out.println("maxPriceIndex = " + maxPriceIndex);
+        System.out.println("maxPrice = " + maxPrice);
+        System.out.println("expensive item detail = "
+                + productLst.get(maxPriceIndex));
+
+
+        System.out.println("\n-----------Task 7 ----------");
 //         * Task 7 : Update Dyson price to 80% off
 //         *          (Monthly payment (24 month) should also be calculated accordingly)
 
+        System.out.println("\n-----------Task 8 ----------");
 //         * Task 8 : Count the items prices more than average price.
 
+        System.out.println("\n-----------Task 9 ----------");
 //         * OPTIONALLY :
 //         * Task 9 : Remove all the items has more than average price.
 
-
+        System.out.println("\n-----------Task 3 ArrayList Objects ----------");
 //         * ------------------------
 //         * Create 3 more ArrayList objects to separately store
 //         *  itemNames(String), prices(Double) , monthlyPayments(Double)  :
