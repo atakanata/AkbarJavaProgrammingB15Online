@@ -62,18 +62,6 @@ public class ArrayListPractice2 {
         System.out.println("productLst = " + productLst);
 
 
-        System.out.println("\n-----------Task 8 ----------");
-//         * Task 8 : Count the items prices more than average price.
-
-        System.out.println("\n-----------Task 9 ----------");
-//         * OPTIONALLY :
-//         * Task 9 : Remove all the items has more than average price.
-
-        System.out.println("\n-----------Task 3 ArrayList Objects ----------");
-//         * ------------------------
-//         * Create 3 more ArrayList objects to separately store
-//         *  itemNames(String), prices(Double) , monthlyPayments(Double)  :
-
 
     }
 
