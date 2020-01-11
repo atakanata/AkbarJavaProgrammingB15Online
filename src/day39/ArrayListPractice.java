@@ -48,7 +48,15 @@ public class ArrayListPractice {
         }
 
 //         * Task 2 : print all the prices more than 500
+        for (String eachProduct : productLst) {
 
+            double price = Double.parseDouble(eachProduct.split(",")[1]);
+
+            if (price > 500) {
+                System.out.println("price = " + price);
+            }
+
+        }
 //         * Task 3 : print average price
 
 //         * Task 4 : print all the items name that has less than 20$ monthly payment.
