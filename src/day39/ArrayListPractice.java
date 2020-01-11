@@ -58,6 +58,20 @@ public class ArrayListPractice {
 
         }
 //         * Task 3 : print average price
+        double sum = 0;
+        double average = 0;
+
+        for (String eachProduct : productLst) {
+
+            double price = Double.parseDouble(eachProduct.split(",")[1]);
+            sum = sum + price; // sum += price ;
+
+        }
+        average = sum / productLst.size();
+
+        System.out.println("sum = " + sum);
+        System.out.println("average = " + average);
+
 
 //         * Task 4 : print all the items name that has less than 20$ monthly payment.
 
