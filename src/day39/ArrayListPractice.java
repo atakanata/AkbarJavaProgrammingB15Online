@@ -98,47 +98,74 @@ public class ArrayListPractice {
             }
 
         }
-        System.out.println("\n-----------Task 6 ----------with only price");
+        System.out.println("\n-----------Task 6 ----------with for each loop");
 //         * Task 6 : Print all information about most expensive item.
 
         // assume first item price is max price before comparing
-//        double maxPrice = Double.parseDouble(productLst.get(0).split(",")[1]) ;
-
-//        for (String eachProduct : productLst) {
-//
-//            double price = Double.parseDouble(eachProduct.split(",")[1]);
-//            if(price> maxPrice){
-//                maxPrice = price ;
-//            }
-//
-//        }
-//        System.out.println("maxPrice = " + maxPrice);
-        System.out.println("\n-----------Task 6 ----------with product details");
-        // above solution will not work
-        // because we need the location of max price not the price itself
         double maxPrice = Double.parseDouble(productLst.get(0).split(",")[1]);
-        int maxPriceIndex = 0;
+        String maxPriceItem = "";
 
-        for (int i = 0; i < productLst.size(); i++) {
+        for (String eachProduct : productLst) {
 
-            // this is how we get each price part of items details
-            String priceStr = productLst.get(i).split(",")[1];
-            // this is how we turn the priceString into double data type
-            double price = Double.parseDouble(priceStr);
+            double price = Double.parseDouble(eachProduct.split(",")[1]);
             if (price > maxPrice) {
                 maxPrice = price;
-                maxPriceIndex = i;
+                maxPriceItem = eachProduct;
             }
+
         }
-        System.out.println("maxPriceIndex = " + maxPriceIndex);
-        System.out.println("maxPrice = " + maxPrice);
-        System.out.println("expensive item detail = "
-                + productLst.get(maxPriceIndex));
+        System.out.println("maxPriceItem = " + maxPriceItem);
+        System.out.println("maxPriceItem is at index :  "
+                + productLst.indexOf(maxPriceItem));
+//        System.out.println("maxPrice = " + maxPrice);
+//        System.out.println("\n-----------Task 6 ----------with product details");
+        // above solution will not work
+        // because we need the location of max price not the price itself
+//        double maxPrice = Double.parseDouble(productLst.get(0).split(",")[1]);
+//        int maxPriceIndex = 0;
+//
+//        for (int i = 0; i < productLst.size(); i++) {
+//
+//            // this is how we get each price part of items details
+//            String priceStr = productLst.get(i).split(",")[1];
+//            // this is how we turn the priceString into double data type
+//            double price = Double.parseDouble(priceStr);
+//            if (price > maxPrice) {
+//                maxPrice = price;
+//                maxPriceIndex = i;
+//            }
+//        }
+//        System.out.println("maxPriceIndex = " + maxPriceIndex);
+//        System.out.println("maxPrice = " + maxPrice);
+//        System.out.println("expensive item detail = "
+//                + productLst.get(maxPriceIndex));
 
 
         System.out.println("\n-----------Task 7 ----------");
 //         * Task 7 : Update Dyson price to 80% off
 //         *          (Monthly payment (24 month) should also be calculated accordingly)
+        System.out.println(productLst.contains("Dyson")); // false
+        System.out.println(productLst.indexOf("Dyson")); // -1
+        //    System.out.println(productLst.startWith("Dyson")); // COMPILER ERROR
+        int dysonIndex = 0; // there is only one Dyson
+        for (int i = 0; i < productLst.size(); i++) {
+
+            if (productLst.get(i).startsWith("Dyson")) {
+                dysonIndex = i;
+            }
+        }
+
+        System.out.println("dysonIndex = " + dysonIndex);
+        String dysonDetails = productLst.get(dysonIndex);
+        String name = dysonDetails.split(",")[0];
+        double price = Double.parseDouble(dysonDetails.split(",")[1]);
+        double monthly = Double.parseDouble(dysonDetails.split(",")[2]);
+        dysonDetails = name + "," + price * 0.2 + "," + monthly * 0.2;
+
+        System.out.println("dysonDetails = " + dysonDetails);
+        productLst.set(dysonIndex, dysonDetails);
+        System.out.println("productLst = " + productLst);
+
 
         System.out.println("\n-----------Task 8 ----------");
 //         * Task 8 : Count the items prices more than average price.
