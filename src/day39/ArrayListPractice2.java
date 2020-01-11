@@ -43,7 +43,6 @@ public class ArrayListPractice2 {
                 dysonIndex = i; // if so set the dysonIndex to that location
             }
         }
-
         System.out.println("dysonIndex = " + dysonIndex);
         // This is original dyson details using the index
         String dysonDetails = productLst.get(dysonIndex);
