@@ -24,10 +24,28 @@ public class ArrayListPractice {
                 "iPad,429,18.31",
                 "Dyson Vacuum,399,16.25",
                 "TV,2199,89.49",
-                "Apple Watch,559,21.18")
-        );
+                "Apple Watch,559,21.18"));
+        System.out.println("productLst = " + productLst);
+        System.out.println("productLst element count  = " + productLst.size());
+
 
 //         * Task 1 : print only items name
+        // This is for each version
+        for (String eachProduct : productLst) {
+            // we get each product , then we split by comma to split into 3 part
+            // and get first part of 3 -->> NAME
+            String namePart = eachProduct.split(",")[0];
+            System.out.println("eachProduct name = " + namePart);
+
+        }
+        // This is for loop version
+        for (int i = 0; i < productLst.size(); i++) {
+            // we get each product by using get method of ArrayList in for loop
+            // then we split by comma to split into 3 part
+            // and get first part of 3 -->> NAME
+            String namePart = productLst.get(i).split(",")[0];
+            System.out.println("eachProduct name = " + namePart);
+        }
 
 //         * Task 2 : print all the prices more than 500
 
