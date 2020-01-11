@@ -67,13 +67,23 @@ public class ArrayListPractice {
             sum = sum + price; // sum += price ;
 
         }
-        average = sum / productLst.size();
+        average = sum / productLst.size(); // sum / 12
 
         System.out.println("sum = " + sum);
         System.out.println("average = " + average);
 
 
 //         * Task 4 : print all the items name that has less than 20$ monthly payment.
+        for (String eachProduct : productLst) {
+
+            String name = eachProduct.split(",")[0];
+            double monthly = Double.parseDouble(eachProduct.split(",")[2]);
+
+            if (monthly < 20) {
+                System.out.println(name + " " + monthly);
+            }
+
+        }
 
 //         * Task 5 : Print the monthly payments of all the iPhone no matter what model.
 
