@@ -21,5 +21,14 @@ public class Offer {
 
     }
 
+    // Write a method called turnToFullTime
+    public void turnToFullTime() {
+
+        if (isFullTime == false) {
+            isFullTime = true;
+        }
+
+    }
+
 
 }
