@@ -52,6 +52,18 @@ public class HotMarketActions {
 
         }
 
+        System.out.println("myOffers ------for loop------------");
+
+        for (int x = 0; x < myOffers.size(); x++) {
+
+            // store each item to a variable each
+            Offer each = myOffers.get(x);
+            each.displayInformation();
+            // This is the one shot version
+            //myOffers.get(x).displayInformation();
+
+        }
+
 
     }
 
