@@ -25,7 +25,7 @@ public class BankAccount {
 
     // showAccountHolderAccountType
     public void showAccountHolderAccountType() {
-        System.out.println("accountType = " + accountType);
+        System.out.println("account holder is " + accountHolder + " | accountType = " + accountType);
     }
 
     // getBalance  return the balance
@@ -62,8 +62,6 @@ public class BankAccount {
     }
 
     // toString
-
-    @Override
     public String toString() {
         return "BankAccount{" +
                 "accountType='" + accountType + '\'' +
