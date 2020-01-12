@@ -37,6 +37,7 @@ public class HotMarketActions {
         // null
         o4.displayInformation();
         // creating ArrayList of Offer to store multiple offer objects
+        //List<Offer> myOffers = new ArrayList<>();
         ArrayList<Offer> myOffers = new ArrayList<>();
         myOffers.add(o1);
         myOffers.add(o2);
