@@ -33,14 +33,43 @@ public class BankAccount {
         // after doing a lot of validation to make sure you have correct credential to view the balance
         return balance;
     }
+
     // deposit ( amount)
+    public void deposit(double amount) {
+        balance = balance + amount;  // balance += amount;
+    }
+
     // withdraw ( amount)
+    public void withdraw(double amount) {
+        balance = balance - amount;  //balance -= amount ;
+    }
 
     // withdraw100$Cash()
+    public void withdraw100$Cash() {
+
+        withdraw(100); // reusing the functionality we already have
+        // or balance = balance - 100
+    }
 
     // purchaseProduct(productPrice , count )
+    public void purchaseProduct(double productPrice, int count) {
+
+        double totalPrice = productPrice * count;
+        balance -= totalPrice;
+        // or
+        // withdraw(totalPrice) ;
+
+    }
 
     // toString
 
-
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "accountType='" + accountType + '\'' +
+                ", accountHolder='" + accountHolder + '\'' +
+                ", accountNumber=" + accountNumber +
+                ", balance=" + balance +
+                '}';
+    }
 }
