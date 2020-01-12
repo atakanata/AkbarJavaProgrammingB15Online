@@ -17,6 +17,9 @@ public class HotMarketActions3 {
         o1.changeLocation("DC");
         o1.displayInformation();
 
+        o1.changeAllInfo("Amazon", "Virginia", 150000, true);
+//        o1.displayInformation();
+
 
     }
 

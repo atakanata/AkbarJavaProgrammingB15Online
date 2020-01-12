@@ -40,5 +40,19 @@ public class Offer {
 
     }
 
+    // Write a method to accept 4 parameters to change all info
+    // about offers
+    public void changeAllInfo(String newCompany, String newLocation,
+                              long newSalary, boolean newIsFullTime) {
+
+        company = newCompany;
+        location = newLocation;
+        salary = newSalary;
+        isFullTime = newIsFullTime;
+
+        displayInformation();
+
+    }
+
 
 }
