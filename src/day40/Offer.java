@@ -49,10 +49,26 @@ public class Offer {
         location = newLocation;
         salary = newSalary;
         isFullTime = newIsFullTime;
-
+        // an instance method can call another instance method
+        // an instance method can use any instance fields
+        // since we already have functionality to display information
+        // we called it here to display new information after modifying
         displayInformation();
 
     }
 
+    // write a method to check the offer belong to 100K club and return the result as true false
+
+    /**
+     * a method to check the offer belong to 100K club
+     *
+     * @return true if salary is more than 100k , false if not
+     */
+    public boolean is100KOffer() {
+        // salary>=100000 already generate a boolean result
+        // so we can directly return that result
+        return salary >= 100000;
+
+    }
 
 }
