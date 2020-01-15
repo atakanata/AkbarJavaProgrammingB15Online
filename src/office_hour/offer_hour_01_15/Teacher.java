@@ -32,7 +32,7 @@ public class Teacher {
         // what if setting the name require 100 lines of check
         // what if setting the age require 100 lines of check
         // can I just reuse the method I already have fort setting name and age
-        setName(name);
+        setName(name);  // optionally this.setName(name);
         setAge(age);
 
 
