@@ -28,6 +28,16 @@ public class TV {
         return currentChannel;
     }
 
+    // we can not set a channel if the TV is off!!!
+    public void setCurrentChannel(int newChannel) {
+
+        if (isOn == true) {
+            currentChannel = newChannel;
+        } else {
+            System.out.println("TURN ON THE TV FIRST");
+        }
+
+    }
 
     public void turnOn() {
 
@@ -51,4 +61,11 @@ public class TV {
     }
 
 
+    public String toString() {
+        return "TV{" +
+                "name='" + name + '\'' +
+                ", isOn=" + isOn +
+                ", currentChannel=" + currentChannel +
+                '}';
+    }
 }
