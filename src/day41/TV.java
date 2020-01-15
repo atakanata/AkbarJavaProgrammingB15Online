@@ -4,7 +4,7 @@ package day41;
  * TV
  * attributes :
  * brand , isOn , currentChannel
- * String , boolean , int   (range from 1-50)
+ * String , boolean , int   (range from 0-50)
  * behaviours :
  * turnOn
  * turnOff
@@ -29,7 +29,14 @@ public class TV {
     }
 
     // we can not set a channel if the TV is off!!!
+    // valid channel is from 0-50
     public void setCurrentChannel(int newChannel) {
+
+        // if my channel is out of range i want to exit from the method
+        if (newChannel < 0 || newChannel > 50) {
+            System.out.println("INVALID CHANNEL, GETTING OUT");
+            return; // early exit from the method
+        }
 
         if (isOn == true) {
             currentChannel = newChannel;
