@@ -7,6 +7,7 @@ public class TVStore {
 
         TV t1 = new TV();
         t1.name = "Sony";
+        t1.currentChannel = 2000;
 
         System.out.println("t1 = " + t1.toString());
         t1.turnOn();
