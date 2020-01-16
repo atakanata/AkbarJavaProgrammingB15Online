@@ -31,7 +31,7 @@ public class AccessModifierIntro {
 
         Person p1 = new Person();
 //        p1.name = "Hasan" ;
-//        p1.age = 19 ;
+//        p1.age = 19 ;  // cant do this with private field
 //        p1.ssn = 123456789;
 
         p1.setAll("Hasan", 34, 1231231231);
