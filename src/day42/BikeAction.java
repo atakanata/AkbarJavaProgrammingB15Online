@@ -6,7 +6,7 @@ public class BikeAction {
     public static void main(String[] args) {
 
 
-        Bike b1 = new Bike();
+        Bike b1 = new Bike("abc");
         Bike b2 = new Bike();
 
         // i don't want empty gear when object is created
