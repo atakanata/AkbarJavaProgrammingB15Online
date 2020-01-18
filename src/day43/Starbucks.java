@@ -15,8 +15,9 @@ public class Starbucks {
 //        System.out.println("c2 = " + c2);
 //
         Coffee c3 = new Coffee("Blonde", 5, 1.6);
+        System.out.println("c3 before = " + c3);
         c3.setPrice(-100);
-        System.out.println("c3 = " + c3);
+        System.out.println("c3 after = " + c3);
 
 //
         Coffee c4 = new Coffee("Latte", 3, -2.6);

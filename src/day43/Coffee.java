@@ -19,12 +19,16 @@ public class Coffee {
     public Coffee(String type, int caffeineLevel, double price) {
         this.type = type;
         this.caffeineLevel = caffeineLevel;
+
         // only set the value if the price is valid
 //        if (price > 0) {
 //            this.price = price;
 //        } else {
 //            this.price = 1;
 //        }
+        // we already have a code to do above logic in setter
+        // so we can call the method directly to avoid duplication
+        // you can call any methods of same class in constructors
         setPrice(price);
     }
 
