@@ -20,6 +20,15 @@ public class Coffee {
         this.type = type;
         this.caffeineLevel = caffeineLevel;
         // only set the value if the price is valid
+//        if (price > 0) {
+//            this.price = price;
+//        } else {
+//            this.price = 1;
+//        }
+        setPrice(price);
+    }
+
+    public void setPrice(double price) {
         if (price > 0) {
             this.price = price;
         } else {
@@ -54,8 +63,10 @@ public class Coffee {
     public double getPrice() {
         return price;
     }
+    // we want to block the caller of this method
+    // to set invalid price less than 0
+    // if invalid we just set it to 1
+    // for protection
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
+
 }
