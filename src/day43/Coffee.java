@@ -1,5 +1,14 @@
 package day43;
 
+/**
+ * A Blueprint for Coffee object
+ * With 3 constructors
+ * getters and setters
+ * Price should never be less than 0
+ * No Coffee object with minus price should be created
+ * No one should change the price
+ * to minus for any existing coffee object
+ */
 public class Coffee {
 
     private String type;
