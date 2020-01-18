@@ -46,6 +46,14 @@ public class Pet {
                 '}';
     }
 
+    // IF YOUR METHOD DOES NOT READ OR MODIFY OBJECT ATTRINUTE
+    // YOU CAN JUST MAKE IT STATIC
+    public static void showGeneralPetInfo() {
+        System.out.println("PETS ARE FRIEND OF HUMANS");
+        // THIS WILL NOT WORK
+        // STATIC METHOD CAN NOT ACCESS ANYTHING NON-STATIC
+        //System.out.println(name);
+    }
 
     public String getType() {
         return type;
