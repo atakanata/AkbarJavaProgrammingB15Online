@@ -7,14 +7,13 @@ public class Coffee {
     private double price;
 
     public Coffee() {
-        System.out.println("no arg constructor");
-
+        System.out.println("no arg constructor being called");
     }
 
     public Coffee(String type, int caffeineLevel) {
         this.type = type;
         this.caffeineLevel = caffeineLevel;
-        System.out.println("2 args constructor");
+        System.out.println("2 args constructor being called");
     }
 
     public Coffee(String type, int caffeineLevel, double price) {

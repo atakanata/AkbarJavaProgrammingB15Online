@@ -6,6 +6,7 @@ public class Starbucks {
 
 
         Coffee c1 = new Coffee();
+        System.out.println("c1 = " + c1);
 
 
     }
