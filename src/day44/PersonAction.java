@@ -16,6 +16,9 @@ public class PersonAction {
         Person p3 = new Person("Dani", 25);
         System.out.println("p3 = " + p3);
 
+        // what is the correct way to access static member of the class : STATIC WAY !!!
+        System.out.println("Person.species = " + Person.species);
+
 
     }
 
