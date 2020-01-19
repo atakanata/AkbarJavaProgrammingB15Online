@@ -2,7 +2,10 @@ package day44;
 
 public class Vehicle {
 
-    String make;
+    // protected access modifier :
+    // make the member accessible in subclasses of this class
+    // in different package
+    protected String make;
     private int year;
 
     public void start() {
