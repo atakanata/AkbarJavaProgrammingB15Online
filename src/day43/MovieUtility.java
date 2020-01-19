@@ -34,17 +34,23 @@ public class MovieUtility {
         printShorterMovieName(m2,m3);
 
         boolean result1 = isMovieLengthMoreThan2Hours(m1); //true
+        System.out.println("result1 = " + result1);
         boolean result2 = isFamilyMovie(m1);               //false
+        System.out.println("result2 = " + result2);
         String shortInfo = getCombinedMovieInfo(m1);       //Joker-2.2-Drama
+        System.out.println("shortInfo = " + shortInfo);
 
         // Create this object : Movie{name='Batman', length=2.3, type='Action'}
         Movie m4 = createMovie("Batman",2.3,"Action");
+        System.out.println("m4 = " + m4);
 
         // Create this object : Movie{name='Aladdin', length=2.7, type='Family'}
         Movie m5 = createFamilyMovie("Aladdin",2.7);
+        System.out.println("m5 = " + m5);
 
         // Your Movie List after the method call
         List<Movie> myMovieList = getMyFavoriteMovies();
+        System.out.println("myMovieList = " + myMovieList);
 
         // Sum of your movie hour totals
         double totalHours = getTotalHoursOfAllMovies(myMovieList) ;
@@ -60,7 +66,10 @@ public class MovieUtility {
      * @param movieObj the movie object to get information from
      */
     public static void printMovieInformation(Movie movieObj) {
-        //TODO YOUR CODE HERE
+
+        System.out.println("The movie "+movieObj.getName()
+                            +" is "+movieObj.getLength()
+                            +" hour long and it genre is "+movieObj.getType());
 
     }
     /**
@@ -70,8 +79,12 @@ public class MovieUtility {
      * @param movieObj the movie object to get information from
      */
     public static void printMovieNameCharacters(Movie movieObj) {
-        //TODO YOUR CODE HERE
 
+        String name = movieObj.getName().toUpperCase();
+        for (int i = 0; i < name.length()-1; i++) {
+            System.out.print(name.charAt(i)+"-");
+        }
+        System.out.println(name.charAt(name.length()-1) );
     }
 
     /**
@@ -83,7 +96,11 @@ public class MovieUtility {
      * @param movieObj2 second movie object
      */
     public static void printShorterMovieName(Movie movieObj1, Movie movieObj2) {
-        //TODO YOUR CODE HERE
+        if(movieObj1.getLength()< movieObj2.getLength()){
+            System.out.println("Shorter movie is : " + movieObj1.getName());
+        }else{
+            System.out.println("Shorter movie is : " + movieObj2.getName());
+        }
     }
 
     /**
@@ -92,8 +109,8 @@ public class MovieUtility {
      * @return true if movieObj length is more than 2 hours
      */
     public static boolean isMovieLengthMoreThan2Hours(Movie movieObj) {
-        //TODO YOUR CODE HERE
-        return false;
+
+        return movieObj.getLength()>2;
     }
     /**
      * A method that check the type of movie is Family or not
@@ -101,9 +118,9 @@ public class MovieUtility {
      * @return true if movieObj type is Family (regardless of uppercase lowercase)
      */
     public static boolean isFamilyMovie(Movie movieObj) {
-        //TODO YOUR CODE HERE
 
-        return false;
+        return movieObj.getType().equalsIgnoreCase("Family");
+
     }
 
     /**
@@ -115,9 +132,7 @@ public class MovieUtility {
      */
     public static String getCombinedMovieInfo(Movie movieObj) {
 
-        String combinedResult = "";
-        //TODO YOUR CODE HERE
-
+        String combinedResult = movieObj.getName()+"-"+movieObj.getLength()+"-"+movieObj.getType();
 
         return combinedResult;
     }
@@ -132,7 +147,7 @@ public class MovieUtility {
     public static Movie createMovie(String aName, double aLength, String aType) {
         // an spoiler as example , ALREADY DONE FOR YOU
         Movie m = new Movie(aName,aLength,aType);
-        return m;
+        return m; // or directly return new Movie(aName,aLength,aType);
     }
 
     /**
@@ -144,8 +159,10 @@ public class MovieUtility {
      * @return Family Movie object with above information
      */
     public static Movie createFamilyMovie(String name, double len) {
-        //TODO YOUR CODE HERE
-        return null;
+
+        Movie m = new Movie(name,len,"Family");
+        return m;
+
     }
 
     /**
@@ -155,7 +172,14 @@ public class MovieUtility {
     public static List<Movie> getMyFavoriteMovies() {
 
         List<Movie> movieLst = new ArrayList<>();
-        //TODO YOUR CODE HERE
+        movieLst.add( new Movie("Joker",2.5,"Drama") );
+        movieLst.add( new Movie("Lord Of The Rings",9.5,"Drama") );
+        movieLst.add( new Movie("Catch me If you can",2.5,"Drama") );
+        movieLst.add( new Movie("Tom & Jerry",2.5,"Family") );
+        movieLst.add( new Movie("Justice League",2.7,"Action") );
+        movieLst.add( new Movie("Jumanji",2.7,"Action") );
+        movieLst.add( new Movie("Boss Baby",2.7,"Family") );
+        movieLst.add( new Movie("The Irishman",2.7,"Crime") );
 
         return movieLst;
     }
@@ -168,11 +192,35 @@ public class MovieUtility {
     public static double getTotalHoursOfAllMovies( List<Movie> lst) {
 
         double sum = 0 ;
-        //TODO YOUR CODE HERE
+
+        for (Movie each : lst) {
+
+            sum += each.getLength();
+
+        }
 
         return sum;
     }
 
+    /**
+     * A method to find longest name movie
+     * @param lst List of Movie Object to calculate name length
+     * @return longest Name
+     */
+    public static String getLongestMovieName( List<Movie> lst) {
+
+        String longestName = lst.get(0).getName() ;
+        //TODO YOUR CODE HERE
+        for (Movie each : lst) {
+
+            if(each.getName().length() > longestName.length()){
+                longestName = each.getName();
+            }
+
+        }
+
+        return longestName;
+    }
 
 
 }
