@@ -24,6 +24,7 @@ public class Apple extends Fruit {
         // can we use this super() call more than once
         // NO !!!!!!!!!!!!!!!
         System.out.println("Message from Apple Constructor");
+//        super(); // can not be here , it has to be in first statement
     }
 
 
