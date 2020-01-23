@@ -14,10 +14,23 @@ public class SavingAccount extends BankAccount {
     // BAD IDEA TO HAVE MAIN HERE , JUST DOING IT ANYWAY
     public static void main(String[] args) {
 
-        SavingAccount s1 = new SavingAccount("Mohammed", 12345, 500, 4.2);
+        SavingAccount s1 = new SavingAccount("Mohammed", 12345, 500, 0.042);
         System.out.println("s1 = " + s1.toString());
-        s1.withdraw(100);
+        //s1.withdraw(100);
+        //System.out.println("s1 = " + s1);
+        s1.deposit(1000);
         System.out.println("s1 = " + s1);
+
+    }
+
+    @Override
+    public void deposit(int amount) {
+
+        //balance += amount + amount*interestRate;
+        // calculating the interest rate and casting to int variable
+        // because deposit method accept int data type not double !!!!
+        int actualAmount = (int) (amount + amount * interestRate);
+        super.deposit(actualAmount);
 
     }
 
