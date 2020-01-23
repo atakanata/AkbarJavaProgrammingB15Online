@@ -30,7 +30,8 @@ public class SavingAccount extends BankAccount {
 
         //balance += amount + amount*interestRate;
         // calculating the interest rate and casting to int variable
-        // because deposit method accept int data type not double !!!!
+        // because (amount + amount * interestRate) -->> generate double result
+        // and deposit method accept int data type not double !!!!
         int actualAmount = (int) (amount + amount * interestRate);
         super.deposit(actualAmount);
 
