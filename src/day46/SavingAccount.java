@@ -23,7 +23,9 @@ public class SavingAccount extends BankAccount {
 
     }
 
-    @Override
+    @Override // this is called annotation
+    // it will ensure this is actually a valid overridden method
+    // if any rule does not match , it will not even compile
     public void deposit(int amount) {
 
         //balance += amount + amount*interestRate;
