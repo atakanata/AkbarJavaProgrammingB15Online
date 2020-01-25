@@ -1,9 +1,9 @@
 package day47;
 
+
 public class ElectricCar extends Car {
 
     int batteryLevel;
-
 
     @Override
     public void start() {
@@ -12,17 +12,17 @@ public class ElectricCar extends Car {
 
     @Override
     public void goForward() {
-        System.out.println("GOING FORWARD");
+        System.out.println(" electric car  GOING FORWARD");
     }
 
     @Override
     public void goBackward() {
-        System.out.println("GOING BACKWARD");
+        System.out.println(" electric car  GOING BACKWARD");
     }
 
     @Override
     public void turn(String direction) {
-        System.out.println("TURNING " + direction);
+        System.out.println(" electric car TURNING " + direction);
     }
 
 
