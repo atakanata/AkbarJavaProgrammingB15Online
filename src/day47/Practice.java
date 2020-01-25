@@ -4,6 +4,8 @@ public class Practice {
     // this is not inherited
     private void doSomething() {
 
+        String str;
+
     }
 
 
