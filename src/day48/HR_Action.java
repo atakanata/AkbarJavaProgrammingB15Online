@@ -4,7 +4,6 @@ public class HR_Action {
 
     public static void main(String[] args) {
 
-
 //        Employee e1 = new Employee();
 //
         HourlyEmployee e1 = new HourlyEmployee("Subi", 101, 55, 2000);
