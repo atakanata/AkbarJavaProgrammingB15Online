@@ -13,7 +13,8 @@ public class BoucingParty {
         b1.kickBox();
 
         // SuperType variableName = new SubType(....) ;  THIS WORKS
-//        List<Integer> lst = new ArrayList<>();
+        // THIS WILL BE EXPLAINED MUCH IN DETAIL IN IT'S OWN DAYS
+        //List<Integer> lst = new ArrayList<>();
         Bouncible k1 = new Kangaroo("Toto", 6);
         k1.bounce();
 
