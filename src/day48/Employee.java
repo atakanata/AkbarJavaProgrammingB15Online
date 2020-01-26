@@ -20,6 +20,8 @@ public abstract class Employee {
 
     public abstract void calculateAnnualSalary();
 
+    // This is optional : the only reason we put it in here was
+    // to enforce sub class to provide toString method
     public abstract String toString();
 
 
