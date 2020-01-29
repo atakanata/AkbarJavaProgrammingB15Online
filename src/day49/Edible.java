@@ -23,6 +23,7 @@ public interface Edible {
     // the default method ONLY EXIST IN an Interface !
     // default keyword here IS NOT AN ACCESS MODIFIER !!!!!!!
     // A default method MUST HAVE BODY !!!!!!!
+    // Implicitly the method is public if you do not specify public
     public default void digest() {
         System.out.println("YOU IMPLEMENT THE CODE YOURSELF !!");
     }
