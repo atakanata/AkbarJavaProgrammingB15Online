@@ -12,6 +12,8 @@ public class TestAnimal {
         dog.eat();
         dog.call(); //The animal is calling ..
         dog.run();   //The dog is running
+        dog.sleep();
+        System.out.println(dog.ZOO_NAME);
 
         System.out.println("==============");
 
@@ -19,6 +21,7 @@ public class TestAnimal {
         cat.eat();
         cat.call();
         cat.run(); //The cat is running ...
+        cat.sleep();
 
 
     }

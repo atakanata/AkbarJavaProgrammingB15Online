@@ -1,6 +1,6 @@
 package office_hour.office_hour_01_28;
 
-public abstract class Animal {
+public abstract class Animal implements Zoo {
 
     //1. no object creation
 

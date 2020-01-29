@@ -14,4 +14,8 @@ public class Cat extends Animal {
     }
 
 
+    @Override
+    public void sleep() {
+        System.out.println("The cat is sleepng ");
+    }
 }
