@@ -11,10 +11,15 @@ public class IceCream extends Object implements Edible {
         i1.drink();
         i1.eat();
         System.out.println(i1.toString());
-
+        i1.digest();
         // since Object class exists , we can create object out of it
         //Object o1 = new Object();
 
+    }
+
+    @Override
+    public void digest() {
+        System.out.println("Digesting burger by chewing more ");
     }
 
     @Override
