@@ -1,5 +1,8 @@
 package day50;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class MathTest {
 
     public static void main(String[] args) {
@@ -40,6 +43,15 @@ public class MathTest {
         System.out.println("q7 = " + q7);
         q7.calculate();
         System.out.println("q7 = " + q7);
+
+        System.out.println(" ================== ");
+
+        List<Question> allTestQuestions = Arrays.asList(q1, q2, q3, q4, q5, q6, q7);
+        for (Question eachQ : allTestQuestions) {
+
+            System.out.println("eachQ = " + eachQ);
+
+        }
 
 
     }
