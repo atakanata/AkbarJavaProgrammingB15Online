@@ -11,6 +11,8 @@ public class Main {
         System.out.println("s1 with area calculation = " + s1);
         s1.draw();
 
+        System.out.println("--------------------");
+
         Circle c1 = new Circle("Nan", 5);
         System.out.println("c1 without area calculation = " + c1);
         c1.calculateArea();
