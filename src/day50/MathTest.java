@@ -21,6 +21,11 @@ public class MathTest {
         q3.calculate();
         System.out.println("q3 = " + q3);
 
+        Multiplication q4 = new Multiplication(10, 3);
+        System.out.println("q4 = " + q4);
+        q4.calculate();
+        System.out.println("q4 = " + q4);
+
 
     }
 
