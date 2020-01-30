@@ -11,7 +11,7 @@ public class Car {
     // I want car object has passenger names attacted to it
 //    String[] passengers;
 
-    List<String> passengers; // = new ArrayList<>();
+    List<String> passengers;    // =  new ArrayList<>();
 
     public static void main(String[] args) {
 
