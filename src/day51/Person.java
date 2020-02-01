@@ -34,7 +34,9 @@ public class Person implements Comparable<Person> {
         } else {
             return 0;
         }
-
+        // since String is Comparable itself it has method to already compare
+        // 2 String objects , so we are just directly using it
+//        return this.name.compareTo(otherPerson.name) ;
 
     }
 
