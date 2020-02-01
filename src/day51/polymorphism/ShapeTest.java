@@ -1,6 +1,6 @@
 package day51.polymorphism;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ShapeTest {
@@ -34,7 +34,14 @@ public class ShapeTest {
         System.out.println("--------For each with List-----------");
 
         // Quick way to create a List  --->> CAN WE ADD OR REMOVE ITEM FROM THIS SHORT WAY ? NO !!!
-        List<Shape> shapeList = Arrays.asList(s1, s2, s3, s2, s1);
+        //List<Shape> shapeList = Arrays.asList(s1, s2, s3, s2, s1);
+        // this is a regular Arraylist object we can do anything with
+        List<Shape> shapeList = new ArrayList<>();
+        shapeList.add(s1);
+        shapeList.add(s2);
+        shapeList.add(s3);
+        shapeList.add(s2);
+        shapeList.add(s1);
 
         for (Shape each : shapeList) {
             each.draw();
