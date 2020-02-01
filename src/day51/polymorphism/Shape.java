@@ -6,7 +6,6 @@ public abstract class Shape {
 
 }
 
-
 class Triangle extends Shape {
 
     @Override
@@ -14,7 +13,6 @@ class Triangle extends Shape {
         System.out.println("DRAWING TRIANGLE");
     }
 }
-
 
 class Rectangle extends Shape {
 
