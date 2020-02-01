@@ -1,10 +1,11 @@
 package day51.polymorphism;
 
-public class Animal {
+public abstract class Animal {
 
-    public void makeNoise() {
-        System.out.println("general animal noise");
-    }
+    public abstract void makeNoise();
+//    {
+//        System.out.println("general animal noise");
+//    }
 
 
 }
