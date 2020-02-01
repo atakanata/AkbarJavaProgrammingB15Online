@@ -1,6 +1,7 @@
 package day51;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class PersonComparing {
@@ -11,7 +12,7 @@ public class PersonComparing {
 
         Person p1 = new Person("Arafat", 34);
 
-        Person p2 = new Person("Zhibekchach", 18);
+        Person p2 = new Person("Zhibekchach", 17);
 
         Person p3 = new Person("Asena", 18);
 
@@ -45,7 +46,9 @@ public class PersonComparing {
         lst.add(new Person("Jon Snow", 27));
         System.out.println("lst = " + lst);
 
-//        Collections.sort(lst);
+        // ANYTHING WE SORT MUST BE A TYPE OF COMPARABLE
+        Collections.sort(lst);
+        System.out.println("lst = " + lst);
 
 
         // compare p1 and p2 by age
