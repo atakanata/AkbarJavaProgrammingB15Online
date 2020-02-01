@@ -1,4 +1,4 @@
-package day51.polymorphim;
+package day51.polymorphism;
 
 public class AnimalShow {
 
