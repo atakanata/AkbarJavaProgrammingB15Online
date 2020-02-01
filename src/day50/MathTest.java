@@ -47,10 +47,12 @@ public class MathTest {
         System.out.println(" ================== ");
 
         List<Question> allTestQuestions = Arrays.asList(q1, q2, q3, q4, q5, q6, q7);
+
         for (Question eachQ : allTestQuestions) {
-
+            eachQ.calculated = false;
             System.out.println("eachQ = " + eachQ);
-
+            eachQ.calculate();
+            System.out.println("eachQ = " + eachQ);
         }
 
 
