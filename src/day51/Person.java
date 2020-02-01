@@ -27,7 +27,15 @@ public class Person implements Comparable<Person> {
 //        }
         // modify this method to make your natural order , comparing by name (first character)
         // then use it with sort method
-        return 0;
+        if (this.name.charAt(0) > otherPerson.name.charAt(0)) {
+            return 1;
+        } else if (this.name.charAt(0) < otherPerson.name.charAt(0)) {
+            return -1;
+        } else {
+            return 0;
+        }
+
+
     }
 
 

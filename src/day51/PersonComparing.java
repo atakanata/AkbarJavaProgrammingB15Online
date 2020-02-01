@@ -39,6 +39,11 @@ public class PersonComparing {
 //            System.out.println(p1.name);
 //        }
 
+
+        System.out.println('a' > 'c');
+        System.out.println('z' > 'c');
+
+
         List<Person> lst = new ArrayList<>();
         lst.add(p1);
         lst.add(p2);
