@@ -21,6 +21,7 @@ public class Account implements Transferable, Comparable<Account> {
         } else {
             return 0;
         }
+        // return this.balance - otherAccount.balance
     }
 
 
