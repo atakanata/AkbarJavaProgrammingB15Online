@@ -1,6 +1,6 @@
 package day52.warmup;
 
-public class Account implements Transferable {
+public class Account implements Transferable, Comparable<Account> {
 
     protected String name;
     private int balance;
@@ -9,6 +9,20 @@ public class Account implements Transferable {
         this.name = name;
         this.balance = balance;
     }
+
+    // add logic to compare by balance
+    @Override
+    public int compareTo(Account otherAccount) {
+
+        if (this.balance > otherAccount.balance) {
+            return 1;
+        } else if (this.balance < otherAccount.balance) {
+            return -1;
+        } else {
+            return 0;
+        }
+    }
+
 
     @Override
     public void transferAll(Account otherAccount) {

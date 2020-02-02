@@ -14,6 +14,10 @@ public class BankTest {
         System.out.println("a1 after =  " + a1);
         System.out.println("a2 after = " + a2);
 
+        a1.deposit(50000);
+        a1.withdraw(10000);
+        System.out.println("a1 deposit withdraw action =  " + a1);
+
         a2.transferAll(a1);
         System.out.println("a1 after 2nd transfer =  " + a1);
         System.out.println("a2 after 2nd transfer =  " + a2);
