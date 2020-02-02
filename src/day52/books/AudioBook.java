@@ -38,4 +38,13 @@ public class AudioBook extends Book {
                 + " by " + author + " press ...");
 
     }
+
+    @Override
+    public String toString() {
+        return "AudioBook{" +
+                "duration=" + duration +
+                ", name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                '}';
+    }
 }
