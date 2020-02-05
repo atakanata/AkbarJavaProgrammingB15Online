@@ -2,7 +2,7 @@ package day53;
 
 public class FruitShop {
 
-
+    //Only Reference Type Decide what you can access at compile time
     public static void main(String[] args) {
 
         Apple a1 = new Apple("sweet", "red", "Fuji");
