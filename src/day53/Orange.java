@@ -12,7 +12,7 @@ public class Orange extends Fruit {
     @Override
     public void getDigested() {
 
-        System.out.println("Orange with Vitamin C level" + vcLevel
+        System.out.println("Orange with Vitamin C level " + vcLevel
                 + " has color " + color
                 + " and it has " + taste + " taste when you digest");
 

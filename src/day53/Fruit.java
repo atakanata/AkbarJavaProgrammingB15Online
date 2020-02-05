@@ -12,4 +12,8 @@ public abstract class Fruit {
 
     public abstract void getDigested();
 
+    @Override
+    public String toString() {
+        return "HELLO FROM FRUIT";
+    }
 }
