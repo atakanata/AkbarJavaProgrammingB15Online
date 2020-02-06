@@ -1,7 +1,5 @@
 package day54.selenium;
 
-import day54.interface_as_reference.WebDriver;
-
 public class FirefoxDriver implements WebDriver {
     @Override
     public void openBrowser() {

@@ -1,4 +1,4 @@
-package day54.interface_as_reference;
+package day54.selenium;
 
 public interface WebDriver {
 

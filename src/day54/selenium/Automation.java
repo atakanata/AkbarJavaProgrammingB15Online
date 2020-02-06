@@ -1,7 +1,5 @@
 package day54.selenium;
 
-import day54.interface_as_reference.WebDriver;
-
 public class Automation {
 
     public static void main(String[] args) {
