@@ -1,4 +1,6 @@
-package day54;
+package day54.selenium;
+
+import day54.interface_as_reference.WebDriver;
 
 public class Automation {
 

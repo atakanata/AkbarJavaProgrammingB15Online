@@ -1,4 +1,4 @@
-package day54;
+package day54.animals;
 
 public abstract class Animal {
 
