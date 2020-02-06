@@ -9,6 +9,8 @@ public abstract class Animal {
 
 class Dog extends Animal implements IndoorPet {
 
+    String name;
+
     @Override
     public void speak() {
         System.out.println("BARK!!");
