@@ -1,4 +1,4 @@
-package day55;
+package day55.association;
 
 // Taxi  Engine  -- Driver -- Passengers
 
@@ -34,24 +34,6 @@ public class Taxi {
     }
 }
 
-class Driver {
-
-    String name;
-    int driverID;
-
-    public Driver(String name, int driverID) {
-        this.name = name;
-        this.driverID = driverID;
-    }
-
-    @Override
-    public String toString() {
-        return "Driver{" +
-                "name='" + name + '\'' +
-                ", driverID=" + driverID +
-                '}';
-    }
-}
 
 
 
@@ -59,22 +41,5 @@ class Driver {
 
 
 
-class Engine {
 
-    String type;
-    int horsePower;
-
-    public Engine(String type, int horsePower) {
-        this.type = type;
-        this.horsePower = horsePower;
-    }
-
-    @Override
-    public String toString() {
-        return "Engine{" +
-                "type='" + type + '\'' +
-                ", horsePower=" + horsePower +
-                '}';
-    }
-}
 
