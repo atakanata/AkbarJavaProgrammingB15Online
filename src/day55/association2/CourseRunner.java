@@ -15,11 +15,13 @@ public class CourseRunner {
         Course java = new Course("Java",
                 new ArrayList<>(Arrays.asList("Muge", "Sumeyye", "Hasan", "Astrit", "Vlad", "Zehra")));
 
-        System.out.println("java before adding = \n" + java);
+        //System.out.println("java before adding = \n" + java);
         java.addStudent("Gail");
         java.addStudent("Mohammed");
 
-        System.out.println("Course java = \n" + java);
+        java.addManyStudents(Arrays.asList("Serife", "Israfil", "Toyly"));
+
+        //System.out.println("Course java = \n" + java);
         System.out.println("java.studentNames = " + java.studentNames);
 
 //        java.studentNames.add("Gail");

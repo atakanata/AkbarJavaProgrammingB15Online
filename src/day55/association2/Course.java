@@ -16,6 +16,10 @@ public class Course {
         studentNames.add(name);
     }
 
+    public void addManyStudents(List<String> many) {
+        studentNames.addAll(many);
+    }
+
 
     @Override
     public String toString() {
