@@ -8,6 +8,7 @@ package day55.association;
 // constructor to set the value , add toString method so we can print out
 // Add a instance field called Driver dr , update your constructor to set Driver as well
 
+// Encapsulate All the fields as homework
 public class Taxi {
 
     int plateNumber;
