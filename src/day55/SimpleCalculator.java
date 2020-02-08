@@ -1,11 +1,11 @@
 package day55;
 
-public class Calculator {
+public class SimpleCalculator {
 
     private int result;
 
 
-    public Calculator minusNum(int num) {
+    public SimpleCalculator minusNum(int num) {
 
         this.result -= num;
         return this;
@@ -26,7 +26,7 @@ public class Calculator {
     // obj.add(100).add(50).add(200)
     // only one object . multiple method calls with chaining
     // this is called builder pattern in Java
-    public Calculator addNum(int num) {
+    public SimpleCalculator addNum(int num) {
         // modify current object attribute
         this.result += num;
         // below code will create new object different than the current object
