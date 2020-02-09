@@ -22,9 +22,9 @@ public class Singleton {
     public static Singleton getInstance() {
 
         if (instance == null) {
-            instance = new Singleton();
+            instance = new Singleton(); // create object here
         } else {
-            System.out.println("We already have this object");
+            System.out.println("We already have this object"); // do not create object if already exists
         }
 
         return instance;
