@@ -12,8 +12,7 @@ public class Product extends Object {
         // we need to refer the object as Product
         Product otherProduct = (Product) obj;
         // how to compare this name and price to whatever user passed
-        return this.name.equals(otherProduct.name)
-                && this.price == otherProduct.price;
+        return this.name.equals(otherProduct.name) && this.price == otherProduct.price;
     }
 
 //    public boolean equals(Product otherProduct) {
