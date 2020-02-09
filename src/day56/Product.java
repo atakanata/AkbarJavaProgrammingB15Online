@@ -1,9 +1,18 @@
 package day56;
 
-public class Product {
+public class Product extends Object {
 
     private String name;
     private int price;
+
+    @Override
+    public boolean equals(Object obj) {
+
+        Product otherProduct = (Product) obj;
+        // how to compare this name and price to whatever user passed
+        return this.name.equals(otherProduct.name) && this.price == otherProduct.price;
+    }
+
 
     public Product(String name, int price) {
         this.name = name;
