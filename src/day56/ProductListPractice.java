@@ -27,21 +27,26 @@ public class ProductListPractice {
         productList.add(new Product("Sumsung 10", 1188));
         productList.add(new Product("Sumsung Note", 1288));
 
-
         System.out.println("productList.size() = " + productList.size());
         // How does contains method decide whether the list contains the object we are looking for ?
         // it will internally call the equals method of that type (Product here)
         // if it return true then contains method will return true if not , return false
 
-
+        // this is the target product we are checking
         Product sony = new Product("Sony TV", 499);
-        boolean result = productList.contains(sony);
+        boolean result = productList.contains(sony); // internally call equals to decide whether we have it
         System.out.println("Has Sony TV, with 499 or not result = " + result);
 //        boolean result2 = productList.contains( new Product("Apple TV", 299)  ) ;
-//        System.out.println("Has Apple TV, with 299 or not result2 = " + result2);
-        System.out.println("productList.indexOf(sony) before = " + productList.indexOf(sony));
+//        System.out.println("Has Apple TV, with 299 or not result2 = " + result2); // false , no apple
 
+        // index of works exactly same way , it calls .equals of Product to decide where is the object
+        System.out.println("productList.indexOf(sony) before = " + productList.indexOf(sony));
+        // remove method will remove the object if the list contains the object
+        // again this contains logic is using .equals to decide whether it exists in the list
+        // if we have it we remove it(remove method return true)
+        // if we don't have it do nothing (remove method return false)
         productList.remove(sony);
+        // checking whether we have the Sony after calling remove method
         System.out.println("Has Sony TV after removing? = " + productList.contains(sony));
         System.out.println("productList.indexOf(sony) after = " + productList.indexOf(sony));
 
@@ -53,7 +58,7 @@ public class ProductListPractice {
 ////            if(each.getName().equals("Sony TV") && each.getPrice()==499){
 ////                result = true ;
 ////            }
-//            if ( each.equals( new Product("Sony TV", 499)  ) ){
+//            if ( each.equals( sony  ) ){
 //                result = true ;
 //            }
 //        }
