@@ -5,12 +5,15 @@ public class Product extends Object {
     private String name;
     private int price;
 
-    @Override
+    @Override // require same exact method signature
     public boolean equals(Object obj) {
-
+        // down-casting from type Object to Product
+        // because in order to access Product only field
+        // we need to refer the object as Product
         Product otherProduct = (Product) obj;
         // how to compare this name and price to whatever user passed
-        return this.name.equals(otherProduct.name) && this.price == otherProduct.price;
+        return this.name.equals(otherProduct.name)
+                && this.price == otherProduct.price;
     }
 
 
