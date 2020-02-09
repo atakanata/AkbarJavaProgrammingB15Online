@@ -5,6 +5,11 @@ public class Product extends Object {
     private String name;
     private int price;
 
+    public Product(String name, int price) {
+        this.name = name;
+        this.price = price;
+    }
+
     @Override // require same exact method signature
     public boolean equals(Object obj) {
         // down-casting from type Object to Product
@@ -21,11 +26,6 @@ public class Product extends Object {
 //                && this.price == otherProduct.price;
 //    }
 
-
-    public Product(String name, int price) {
-        this.name = name;
-        this.price = price;
-    }
 
     public String getName() {
         return name;
