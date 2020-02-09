@@ -9,11 +9,11 @@ public class StoreTest {
 
         Store s1 = new Store();
         System.out.println(s1.name);
-        System.out.println(s1.allProducts);
+//        System.out.println(s1.allProducts);
         System.out.println("s1 = " + s1);
 
-        s1.allProducts.add(new Product("imac", 3999));
-        System.out.println(s1.allProducts);
+//        s1.allProducts.add(new Product("imac", 3999));
+//        System.out.println(s1.allProducts);
 
         List<Product> denisList = Arrays.asList(new Product("cookie", 2),
                 new Product("tea", 3),
@@ -21,7 +21,7 @@ public class StoreTest {
                 new Product("muffins", 5));
 
         Store s2 = new Store("Denis Store", denisList);
-
+//        s2.allProducts.clear();
         System.out.println("s2 = " + s2);
 
 
