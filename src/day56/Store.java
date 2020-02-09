@@ -18,6 +18,18 @@ public class Store {
     }
 
     /**
+     * A method to calculate the average price
+     *
+     * @return The Average Price
+     */
+    public double getAveragePrice() {
+        // average is sum of the products divided by product count
+        return findSumOfAllProductPrice() / getProductCount();
+
+    }
+
+
+    /**
      * It will check whether we have the product in the list
      *
      * @param p Product object to be checked
@@ -89,6 +101,20 @@ public class Store {
         // creating ArrayList object here
         // eventually we would have to do it anyway!
         this.allProducts = new ArrayList<>();
+    }
+
+    /**
+     * Calculate the sum of all product price
+     *
+     * @return the sum of all products price
+     */
+    public int findSumOfAllProductPrice() {
+
+        int sum = 0;
+        for (Product each : allProducts) {
+            sum += each.getPrice();
+        }
+        return sum;
     }
 
     /**
