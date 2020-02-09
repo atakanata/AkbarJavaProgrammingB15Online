@@ -16,6 +16,12 @@ public class Product extends Object {
                 && this.price == otherProduct.price;
     }
 
+//    public boolean equals(Product otherProduct) {
+//
+//        return this.name.equals(otherProduct.name)
+//                && this.price == otherProduct.price;
+//    }
+
 
     public Product(String name, int price) {
         this.name = name;
