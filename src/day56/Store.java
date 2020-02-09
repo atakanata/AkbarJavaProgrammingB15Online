@@ -10,6 +10,8 @@ public class Store {
 
     public Store() {
         this.name = "Cybertek Store";
+        // creating ArrayList object here
+        // eventually we would have to do it anyway!
         this.allProducts = new ArrayList<>();
     }
 
@@ -26,7 +28,7 @@ public class Store {
     public String toString() {
         return "Store{" +
                 "name='" + name + '\'' +
-                ", \nallProducts=" + allProducts +
+                ", allProducts=\n\t" + allProducts +
                 '}';
     }
 }

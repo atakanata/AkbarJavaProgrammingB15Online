@@ -10,6 +10,7 @@ public class StoreTest {
         Store s1 = new Store();
         System.out.println(s1.name);
         System.out.println(s1.allProducts);
+        System.out.println("s1 = " + s1);
 
         s1.allProducts.add(new Product("imac", 3999));
         System.out.println(s1.allProducts);
