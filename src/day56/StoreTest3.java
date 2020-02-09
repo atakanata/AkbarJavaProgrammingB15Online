@@ -19,6 +19,7 @@ public class StoreTest3 {
         System.out.println("s2.findSumOfAllProductPrice() = " + s2.findSumOfAllProductPrice());
         System.out.println("s2.getAveragePrice() = " + s2.getAveragePrice());
 
+        System.out.println("Most Expensive Product = " + s2.getMostExpensiveProduct());
 
     }
 

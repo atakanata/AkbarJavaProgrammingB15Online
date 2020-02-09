@@ -17,6 +17,7 @@ public class Store {
         allProducts.addAll(otherList);
     }
 
+
     /**
      * A method to calculate the average price
      *
@@ -102,6 +103,32 @@ public class Store {
         // eventually we would have to do it anyway!
         this.allProducts = new ArrayList<>();
     }
+
+    /**
+     * A method to get most expensive Product
+     *
+     * @return The product object with max price
+     */
+    public Product getMostExpensiveProduct() {
+
+//        int max = allProducts.get(0).getPrice();
+        // assume my max price is lowest number in integer range so it will be replaced by any price
+        int max = Integer.MIN_VALUE;
+        int maxIndex = -1;
+
+        for (int x = 0; x < allProducts.size(); x++) {
+
+            if (allProducts.get(x).getPrice() > max) {
+                max = allProducts.get(x).getPrice();
+                maxIndex = x;
+            }
+
+        }
+        System.out.println("max = " + max);
+        return allProducts.get(maxIndex);
+
+    }
+
 
     /**
      * Calculate the sum of all product price
