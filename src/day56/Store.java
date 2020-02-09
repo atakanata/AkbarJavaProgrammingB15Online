@@ -111,21 +111,31 @@ public class Store {
      */
     public Product getMostExpensiveProduct() {
 
-//        int max = allProducts.get(0).getPrice();
-        // assume my max price is lowest number in integer range so it will be replaced by any price
+        Product maxProduct = null; // assume it's null before we actually find what we are looking for
         int max = Integer.MIN_VALUE;
-        int maxIndex = -1;
-
-        for (int x = 0; x < allProducts.size(); x++) {
-
-            if (allProducts.get(x).getPrice() > max) {
-                max = allProducts.get(x).getPrice();
-                maxIndex = x;
+        for (Product each : allProducts) {
+            if (each.getPrice() > max) {
+                max = each.getPrice();
+                maxProduct = each;  // if max price found , assign maxProduct to the product with max price
             }
-
         }
-        System.out.println("max = " + max);
-        return allProducts.get(maxIndex);
+        return maxProduct; // eventually return the product
+
+////        int max = allProducts.get(0).getPrice();
+//        // assume my max price is lowest number in integer range so it will be replaced by any price
+//        int max = Integer.MIN_VALUE;
+//        int maxIndex = -1; // assuming our index is -1 before we actually find it  // THIS WILL BE REPLACED ANYWAY
+//
+//        for (int x = 0; x < allProducts.size(); x++) {
+//
+//            if (allProducts.get(x).getPrice() > max) {
+//                max = allProducts.get(x).getPrice();
+//                maxIndex = x;
+//            }
+//
+//        }
+//        System.out.println("max = " + max);
+//        return allProducts.get(maxIndex);
 
     }
 
