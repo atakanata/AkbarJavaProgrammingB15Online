@@ -39,9 +39,11 @@ public class ProductListPractice {
         System.out.println("Has Sony TV, with 499 or not result = " + result);
 //        boolean result2 = productList.contains( new Product("Apple TV", 299)  ) ;
 //        System.out.println("Has Apple TV, with 299 or not result2 = " + result2);
+        System.out.println("productList.indexOf(sony) before = " + productList.indexOf(sony));
 
         productList.remove(sony);
         System.out.println("Has Sony TV after removing? = " + productList.contains(sony));
+        System.out.println("productList.indexOf(sony) after = " + productList.indexOf(sony));
 
 
         // check whether we have "Sony TV", with 499
