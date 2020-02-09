@@ -16,6 +16,9 @@ public class StoreTest3 {
         Store s2 = new Store("Denis Store", denisList);
         System.out.println("s2 = " + s2);
 
+        System.out.println("s2.findSumOfAllProductPrice() = " + s2.findSumOfAllProductPrice());
+        System.out.println("s2.getAveragePrice() = " + s2.getAveragePrice());
+
 
     }
 
