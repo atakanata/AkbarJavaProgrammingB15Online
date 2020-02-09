@@ -104,6 +104,27 @@ public class Store {
         this.allProducts = new ArrayList<>();
     }
 
+
+    /**
+     * new List<Product> that contains only Products with price more than average
+     *
+     * @return new List<Product> that contains only Products with price more than average
+     */
+    public List<Product> getAllProductsMoreThanAveragePrice() {
+
+        List<Product> myList = new ArrayList<>();
+        double average = getAveragePrice();
+
+        for (Product each : allProducts) {
+            if (each.getPrice() > average) {
+                myList.add(each);
+            }
+        }
+        return myList;
+
+    }
+
+
     /**
      * A method to get most expensive Product
      *
@@ -112,7 +133,7 @@ public class Store {
     public Product getMostExpensiveProduct() {
 
         Product maxProduct = null; // assume it's null before we actually find what we are looking for
-        int max = Integer.MIN_VALUE;
+        int max = Integer.MIN_VALUE; //int max = allProducts.get(0).getPrice();
         for (Product each : allProducts) {
             if (each.getPrice() > max) {
                 max = each.getPrice();
