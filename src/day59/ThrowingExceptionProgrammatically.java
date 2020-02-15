@@ -19,6 +19,11 @@ public class ThrowingExceptionProgrammatically {
 //        System.out.println("END ");
 //          throw new NullPointerException("Back to earth");
 
+        // throw and throws means completely different thing , please do not mix it up
+        // top interview question always get asked : stay tuned
+
+        // throw keyword can be used to programmatically throw the exception to the runtime
+        // to control the program flow
 
     }
 
