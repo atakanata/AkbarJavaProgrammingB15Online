@@ -14,7 +14,7 @@ public class FinallyBlock {
 
         try {
 
-            System.out.println("nums[0] = " + nums[0]);
+            System.out.println("nums[100] = " + nums[100]);
 
         } catch (Exception e) {
             // HOW DO I GET THE MESSAGE OUT OF THE EXCEPTION OBJECT
