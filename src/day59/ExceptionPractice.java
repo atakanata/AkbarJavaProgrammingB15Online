@@ -19,7 +19,10 @@ public class ExceptionPractice {
         try {
             System.out.println(name.charAt(targetIndex));
 
-        } catch (Exception e) {
+            //} catch (Exception e) {  // this is a general catch block that can catch any exception IS-A sub type of Exception class
+            // below will narrow down the catch block to
+            // only catch StringIndexOutOfBoundsException and take action accordingly
+        } catch (StringIndexOutOfBoundsException e) {
             //getMessage is a method coming from Exception class and provide some more details about exception object
             System.out.println("Message from getMessage method : "
                     + e.getMessage());
