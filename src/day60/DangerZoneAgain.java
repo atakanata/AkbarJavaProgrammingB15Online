@@ -10,15 +10,20 @@ public class DangerZoneAgain {
     // if there is actually a chance for the exception might left unhandled
     // it's good to wrap up under try catch
 
-    public static void main(String[] args) throws FileNotFoundException, InterruptedException {
+    public static void main(String[] args) throws InterruptedException { //FileNotFoundException
 
-        //  calling a method that declare to throws checked exception
-        readMyFile();
+
+        System.out.println("THE START");
+        try {
+            //  calling a method that declare to throws checked exception
+            readMyFile();
+        } catch (FileNotFoundException e) {
+            System.out.println("HANDLING HERE !!! JUST MOVING ON !!");
+        }
         // Thread class is coming from java.lang package
         // it has a method called sleep and it will let your program pause for x milliseconds
         Thread.sleep(3000);
         System.out.println("The end ");
-
 
     }
     // document this method to tell the caller , the file you are about to read might not exists
@@ -29,7 +34,7 @@ public class DangerZoneAgain {
     public static void readMyFile() throws FileNotFoundException {
 
         System.out.println("Reading the file in my computer");
-
+        throw new FileNotFoundException("Kaboom ! file is not here!!! ");
 
     }
 
