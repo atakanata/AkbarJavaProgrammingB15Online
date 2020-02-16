@@ -30,7 +30,6 @@ public class DangerZoneAgain {
     // and handle the consequences yourself
     // the exception type already exists for this type of situation is called
     // FileNotFoundException from java.util package
-
     public static void readMyFile() throws FileNotFoundException {
 
         System.out.println("Reading the file in my computer");
