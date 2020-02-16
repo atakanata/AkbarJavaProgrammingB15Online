@@ -1,9 +1,4 @@
-package day60;
-
-public class BreakTimeException extends RuntimeException {
-
-}
-
+package day60.exeptions;
 
 class Main {
 
@@ -13,8 +8,8 @@ class Main {
 
 //        throw new BreakTimeException();
         try {
-            throw new MyOwnCheckedExeption();
-        } catch (MyOwnCheckedExeption e) {
+            throw new MyOwnCheckedException();
+        } catch (MyOwnCheckedException e) {
             System.out.println("WOLA MY OWN THING CAUGHT!!!");
         }
 
