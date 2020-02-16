@@ -41,5 +41,13 @@ public class DangerZoneAgain2 {
         }
     }
 
+    // Files is a class coming from import java.nio.file package;
+    // it has lots of file related utility.
+    // readAllLines static method is easiest way to read a text file (including csv file)
+    // it accepts a file path as argument and return all lines in a List of String
+    // readAllLines method declares( document ) to throw IOException
+    // IOException is a checked exception -->> must be handled or declared
+
+    // quick side bar : FileNotFoundExcepion is sub class of IOException
 
 }
