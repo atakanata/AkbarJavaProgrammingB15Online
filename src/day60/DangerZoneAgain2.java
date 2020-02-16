@@ -33,7 +33,7 @@ public class DangerZoneAgain2 {
             // we are throwing a checked exception
             // so IT MUST BE HANDLED OR DECLARED , Here we chose to handle it with try catch
 //            throw new FileNotFoundException("Kaboom ! file is not here!!! ");
-            List<String> allLines = Files.readAllLines(Paths.get("src/day60/hero.txt"));
+            List<String> allLines = Files.readAllLines(Paths.get("src/day60/hero.txt")); // moved the file under day60
             System.out.println("allLines = " + allLines);
 //        } catch (FileNotFoundException e) {
         } catch (IOException e) {
