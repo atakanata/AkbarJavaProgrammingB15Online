@@ -22,15 +22,6 @@ public class SetOfUniqueStates_Deleting {
         Iterator<String> stIter = states.iterator();
         // Iterator has 3 methods hasNext() next() remove() works together
         // to remove item while iterating over a collection
-//        while (stIter.hasNext() ){
-////
-////            String each = stIter.next();
-////            if(each.contains("A") ){
-////                System.out.println("removing = " + each);
-////                stIter.remove();
-////            }
-////
-////        }
 
         while (stIter.hasNext()) {
 
@@ -41,9 +32,27 @@ public class SetOfUniqueStates_Deleting {
             }
 
         }
-
-
         System.out.println("states after   = " + states);
+        //        while (stIter.hasNext() ){
+////
+////            String each = stIter.next();
+////            if(each.contains("A") ){
+////                System.out.println("removing = " + each);
+////                stIter.remove();
+////            }
+////
+////        }
+//        System.out.println("states after   = " + states);
+//
+//        System.out.println("stIter.hasNext() = " + stIter.hasNext() );
+        // IF YOU TRY TO GET THE NEXT ITEM THAT YOU DO NOT HAVE USING ITERATOR
+        // YOU WILL GET NoSuchElementException
+//        System.out.println("stIter.next() = " + stIter.next());
+
+
+//        // The Lambda expression way of removing
+//        states.removeIf( each -> each.contains("A")  );
+//        System.out.println("states after   = " + states);
 
 
     }
