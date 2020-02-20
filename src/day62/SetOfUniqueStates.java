@@ -16,19 +16,20 @@ public class SetOfUniqueStates {
         // any type of collection has size method to count the item
         System.out.println("How many ??  states.size() = " + states.size());
 
-        for (String each : states) {
-            System.out.println("each = " + each);
-        }
+//        for (String each : states) {
+//            System.out.println("each = " + each);
+//        }
 
         // FOR LOOP DOES NOT WORK!!!! NO INDEX!!!!!!!!!
         // We can use iterator for any type of collection at all time
 
-//        // creating iterator
+////        // creating iterator
 //        Iterator<String> stIter = states.iterator();
 //
 //        while( stIter.hasNext()  ){
 //            System.out.println("stIter.next() = " + stIter.next());
 //        }
+
 //        states.forEach(each -> System.out.println("each state = " + each));
 
 
