@@ -10,7 +10,7 @@ public class MapAddingElements {
     // CREATING HashMap objects
     Map<String, Integer> nameAgePair = new HashMap<>();
 
-    // adding elements : put
+    // adding elements : put      ---> Map has Entry(Key Value Pair)
     nameAgePair.put("Zehra", 6);
     nameAgePair.put("Muhammed", 21);
     nameAgePair.put("Maiia", 27);
