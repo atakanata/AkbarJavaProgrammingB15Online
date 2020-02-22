@@ -3,7 +3,7 @@ package day63;
 import java.util.HashMap;
 import java.util.Map;
 
-public class WordFrequencyMethod {
+public class WordUtil {
 
 
     public static void main(String[] args) {
