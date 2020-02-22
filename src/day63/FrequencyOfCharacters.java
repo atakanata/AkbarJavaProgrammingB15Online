@@ -8,8 +8,6 @@ public class FrequencyOfCharacters {
 
     public static void main(String[] args) {
 
-        String str = "AAABBBBBBACCRDDD";
-
 
         // Get the frequency and store into map   <Character, Integer>
         // if we do not have the character
@@ -19,6 +17,8 @@ public class FrequencyOfCharacters {
         // if we have the character
         // increase the existing count by 1
         // and replace the value with new value
+        String str = "AAABBBBBBACCRDDD";
+
         Map<Character, Integer> charFreq = new HashMap<>();
 
         for (int x = 0; x < str.length(); x++) {
@@ -33,7 +33,9 @@ public class FrequencyOfCharacters {
             } else {
                 // if we come to this point it means it has already showed up
                 // so we update the count with 1 extra than existing count
-                System.out.println("Incrementing the count of " + currentChar + " by one and replacing old count");
+                System.out.println("Incrementing the count of " + currentChar + " by one and " +
+                        "replacing old count " + charFreq.get(currentChar));
+                // replacing the count value by incrementing existing value
                 charFreq.replace(currentChar, charFreq.get(currentChar) + 1);
 
             }
