@@ -25,7 +25,7 @@ public class Map_entrySet_view {
 
 
         Set<Map.Entry<String, Double>> entryView = groceryPriceMap.entrySet();
-        //
+
         for (Map.Entry<String, Double> each : entryView) {
 
             // what can I do with data type Map.Entry?
