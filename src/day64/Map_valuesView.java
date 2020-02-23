@@ -1,8 +1,6 @@
 package day64;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Map_valuesView {
 
@@ -28,6 +26,9 @@ public class Map_valuesView {
 
         // If you want no connection you may just copy allPrices into different collection object
         // like we did before
+        List<Double> pricesCopy = new ArrayList<>(allPrices);
+        //List<Double> pricesCopy = new ArrayList<>(groceryPriceMap.values());
+        //
 
 
     }
