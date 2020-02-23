@@ -30,6 +30,9 @@ public class MapEntrySetView_Practice {
         employeeMap.put("Alonzo", "Male");
 
         System.out.println("employeeMap = " + employeeMap);
+        // Task 1 : get the name of all the Female from map
+
+        // Task 2 : update the Female to Queen and Male to King
 
 
     }
