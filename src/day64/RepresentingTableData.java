@@ -44,6 +44,8 @@ public class RepresentingTableData {
         rowMapLst.get(0).put("first_name", "Jane");
         System.out.println("rowMapLst = " + rowMapLst);
 
+        // HOMEWORK : FILL UP THIS LIST OF MAP USING FILE DATA
+
 
     }
 
