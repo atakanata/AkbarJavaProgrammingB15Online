@@ -19,6 +19,9 @@ public class MapKeySetView {
         System.out.println("groceryPriceMap = " + groceryPriceMap);
         // Map view :
         // keySet view , values view , entrySet view
+        // the views are strictly connected to the original map
+        // any change made will be reflected back to the map
+
         // How do I store all the keys into a Collection ?
         // what do you think the data type will be to store such collection ?
         // --- Set  because keys are unique

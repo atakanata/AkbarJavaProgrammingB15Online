@@ -22,6 +22,8 @@ public class MapKeySetView_MapIteration {
 
         Set<String> allNames = groceryPriceMap.keySet();
 
+        // we have all the keys in set and we can iterate over a set
+        // since we have the key we can get the value out of the key
         for (String eachName : allNames) {
             System.out.print("eachName = " + eachName);
             System.out.println(" | value is " + groceryPriceMap.get(eachName));

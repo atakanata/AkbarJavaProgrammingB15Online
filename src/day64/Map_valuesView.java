@@ -26,6 +26,9 @@ public class Map_valuesView {
         allPrices.remove(1.99);
         System.out.println("groceryPriceMap = " + groceryPriceMap);
 
+        // If you want no connection you may just copy allPrices into different collection object
+        // like we did before
+
 
     }
 
