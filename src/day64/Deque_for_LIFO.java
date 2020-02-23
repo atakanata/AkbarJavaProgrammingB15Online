@@ -18,7 +18,7 @@ public class Deque_for_LIFO {
         lifoQue.add("attend the class");
         lifoQue.add("Say bye to Java");
 
-
+        // this is how we remove
         System.out.println("lifoQue.removeLast() = " + lifoQue.removeLast());
         System.out.println("lifoQue.removeLast() = " + lifoQue.removeLast());
         System.out.println("lifoQue.removeLast() = " + lifoQue.removeLast());
