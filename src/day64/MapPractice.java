@@ -1,9 +1,6 @@
 package day64;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class MapPractice {
 
@@ -20,7 +17,6 @@ public class MapPractice {
         groupMap.put("Achievers", Arrays.asList("Maiia", "Anastasia", "Zaki", "Toyly", "Like"));
         groupMap.put("BugHunter", Arrays.asList("Ayse", "Rabiyam", "Gulzina"));
         groupMap.put("BugBusters", Arrays.asList("Rukhshona", "Fariza", "Seyma", "Sumeyyra", "Huvayda"));
-
         //System.out.println("groupMap = " + groupMap);
 
         groupMap.forEach((groupCode, allMembers) -> System.out.println("groupCode = " + groupCode + "\n\t members : " + allMembers));
@@ -30,6 +26,13 @@ public class MapPractice {
         // get method from Map | contains method is coming from list
         // because the values are List<String> get method will return the entire List
         System.out.println(groupMap.get("BugHunter").contains("Gulzina"));
+        // we want to add a group entry so we can add or remove members from the group
+
+        groupMap.put("Justice League", new ArrayList<>(Arrays.asList("Superman", "Batman", "WonderWoman")));
+        groupMap.get("Justice League").add("Flash");
+        System.out.println("groupMap.get(\"Justice League\") = " + groupMap.get("Justice League"));
+
+        // the key for the Map should be a type Immutable
 
 
     }
